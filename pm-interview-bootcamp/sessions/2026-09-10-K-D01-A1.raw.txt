@@ -1,0 +1,9 @@
+I would first avoid assuming that more autonomy is the right solution, because the main signal we have is that many QA engineers do not return after trying the feature.
+I would start by clarifying what “not using it again” means. For example, did users successfully generate a test case but decide not to return, or did they fail to complete the first workflow?
+Then I would look at the funnel and segment the users. I would want to understand things like the generation success rate, how often users edit or reject the generated tests, time to complete the task, and whether the generated tests actually run successfully.
+At the same time, I would interview some users who tried the feature but did not return. I would focus on their actual workflow: what they expected the AI to help with, what happened during the first use, what they did after receiving the output, and why they returned to their previous workflow.
+From there, I would form hypotheses. For example, the problem could be poor output quality, missing project context, lack of trust, too much review effort, or simply that the feature does not solve an important enough problem.
+Only after identifying the main cause would I test solutions.
+If autonomy turns out to be part of the problem, I would probably increase it gradually, starting with low-risk and reversible actions while keeping human review for higher-risk changes.
+For success metrics, I would track repeat usage and successful task completion, but I would also use guardrails such as correction rate, rejected changes, and test failure rate.
+So my recommendation would be: first understand why users are not returning, validate the main hypothesis, and then decide whether more autonomy is actually the right intervention.
