@@ -1,5 +1,7 @@
 # Canonical handoff state
 
+> Historical snapshot, superseded by the lightweight study-kit request. Start with [ROADMAP](ROADMAP.md). No mandatory state reading, logging or updates. Instructions and pending activities below record the previous workflow only.
+
 Updated: 2026-09-10, Asia/Ho_Chi_Minh. Phase: K-D01 first answer evaluated; constrained follow-up pending. Read this first on resume.
 
 ## Deadline and capacity
@@ -51,4 +53,3 @@ Updated: 2026-09-10, Asia/Ho_Chi_Minh. Phase: K-D01 first answer evaluated; cons
 README.md: operating protocol. PLAN.md: daily allocations and measurable gates. hiring-models.md: role contrasts.
 scorecards/: Katalon six provisional scores; ShopeeFood still untested. stories/evidence-ledger.md: raw/proposed claim separation.
 sessions/2026-09-10.md: append-only session index; separate A1 raw and feedback files preserve evidence. sources/coaching-brief.raw.txt: exact original brief. sources/intake-2026-09-10.raw.md: exact intake reply.
-

@@ -1,22 +1,63 @@
-# English phrase bank
+# English phrases by thinking function
 
-Seed phrases from the coaching brief; none demonstrated as mastered. A1 shows clear clarification, sequencing and conditional reasoning once. Choose one or two per drill, not a script.
+[Home](../README.md) · [Gemini replay](../gemini/COACH_PROMPT.md) · [Quick review](../QUICK_REVIEW.md)
 
-| Purpose | Simple phrase | Practice status |
-| --- | --- | --- |
-| Clarify | “I’d first clarify…” | UNTESTED |
-| Hypothesis | “My initial hypothesis is…” | UNTESTED |
-| Distinguish | “I’d want to separate…” | UNTESTED |
-| Evidence | “The evidence I’d look for is…” | UNTESTED |
-| Challenge | “I wouldn’t conclude that yet because…” | UNTESTED |
-| Trade-off | “The trade-off I see is…” | UNTESTED |
-| Update | “I’d change my recommendation if…” | UNTESTED |
-| Honest ownership | “My part was…” | UNTESTED |
-| Honest limit | “I didn’t measure that, so I can’t claim…” | UNTESTED |
+Use one or two phrases to support your reasoning. Do not recite the whole list.
 
-After each major answer, preserve the candidate's idea and correct only clarity, professionalism, or naturalness problems. Keep improved versions speakable at approximately IELTS 6 level. Track retrieval in later unaided answers.
+## Clarifying
 
+- “I’d first clarify…”
+- “When you say orders, do you mean placed or completed orders?”
 
-## A1 observations
+## Decomposing
 
-Candidate used “I would start by clarifying…” and “At the same time…” appropriately in 2026-09-10-K-D01-A1. Record as observed once, not mastered. Suggested precision phrase: “If the evidence supports it…”; not yet used by candidate.
+- “I’d break this into…”
+- “I’d separate first-time users from returning users.”
+
+## Hypothesis
+
+- “My initial hypothesis would be…”
+- “One possible explanation is…”
+
+## Evidence
+
+- “The evidence I’d want to see is…”
+- “I’d compare this with…”
+
+## Challenging an assumption
+
+- “I wouldn’t conclude that yet because…”
+- “That may help, but I’d first check…”
+
+## Trade-off
+
+- “The main trade-off is…”
+- “This could help buyers, but increase waiting time for drivers.”
+
+## Recommendation
+
+- “Given the information we have, I’d…”
+- “I’d start with this because…”
+
+## Uncertainty and changing your mind
+
+- “I don’t have enough information to conclude that, but here’s how I’d investigate it.”
+- “I’d change my recommendation if…”
+- “If the evidence supports it, I’d increase autonomy gradually.”
+
+## Personal ownership and evidence
+
+- “My part was…”
+- “I checked the output by…”
+- “I didn’t measure that, so I can’t claim…”
+
+## Pause and finish
+
+- “Let me take a few seconds to structure this.”
+- “My recommendation is… The main risk is…”
+
+## English replay
+
+Say your answer aloud. Ask Gemini for the single most useful correction, then say it again in your own words. Keep the logic and real facts; shorten sentences before adding vocabulary.
+
+Optional historical observation: in [the first answer](../sessions/2026-09-10-K-D01-A1.raw.txt), Dang used “I would start by clarifying…” and “At the same time…” appropriately. These were observed once, not proven mastery. “If the evidence supports it…” was suggested by the coach and has not yet been demonstrated.

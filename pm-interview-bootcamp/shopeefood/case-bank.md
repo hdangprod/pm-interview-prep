@@ -1,5 +1,7 @@
 # ShopeeFood case bank
 
+> Historical queue. Use [CASES](CASES.md) for current practice; no logging or fixed sequence required.
+
 All numbers/scenarios are coach-created simulations, not actual ShopeeFood performance or interview questions.
 No cases completed or failed.
 
@@ -23,4 +25,3 @@ Probe the biggest consequential gap after the answer.
 | S-M01 | Final ambiguous business assessment with data, recommendation and pressure | All critical gates, executive communication | PLANNED Sep 15 |
 
 Each attempt: raw answer ID, data released, major challenges, calculations, score evidence, assistance, KEEP/FIX, revised answer, transfer result and status. Never mark reading a solution as completing a case.
-

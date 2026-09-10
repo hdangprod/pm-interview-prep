@@ -1,0 +1,806 @@
+You are working on my existing Product Management interview preparation repository:
+
+`https://github.com/hdangprod/pm-interview-prep`
+
+Your task is to **improve the repository itself**, not merely propose a plan.
+
+## Context
+
+I am preparing for two interviews on **September 16, 2026**:
+
+### Katalon — Product Management Intern
+
+Focus areas include:
+
+* customer discovery
+* customer problem statements
+* JTBD / personas
+* product requirements/specs
+* metrics and validation
+* AI adoption
+* AI agents
+* MCP
+* developer / QA tooling
+* software testing workflows
+* AI judgment
+* human control / autonomy / trust / evaluation
+
+### ShopeeFood — Associate Product Management
+
+Focus areas include:
+
+* 3-sided marketplace dynamics
+* buyer / merchant / driver interactions
+* metrics
+* business diagnosis
+* operational problems
+* prioritization
+* marketplace trade-offs
+* second-order effects
+* structured business reasoning
+
+My background:
+
+* Computer Science / Software Engineering
+* APIs and technical integrations
+* customer-facing Technical Consultant / Solutions Specialist experience
+* analytics / GTM / GA4
+* practical AI usage
+* PRJ226 AI-agent side project
+* transitioning toward Product Management
+* English around IELTS 6; I want simple, clear, professional PM English
+
+---
+
+# PRODUCT PHILOSOPHY FOR THIS REPOSITORY
+
+The repository should NOT become a complex learning-management system.
+
+I do not want to spend time:
+
+* updating reports
+* maintaining scorecards every day
+* logging every session
+* managing dashboards
+* maintaining complex state
+* engineering automation
+* reading huge research dumps
+
+I want the repository to serve primarily as:
+
+> **A lightweight, portable study kit that tells me what I need to understand, gives me concise material to learn from, and lets me use Gemini Chat as my interactive teacher/interviewer.**
+
+My preferred learning loop is:
+
+`Goal for the day → learn quickly → ask Gemini questions → discuss → apply → practice aloud → self-adjust`
+
+I will decide myself when I need more or less time on a topic.
+
+Do not build unnecessary tracking around me.
+
+---
+
+# FIRST: AUDIT THE EXISTING REPOSITORY
+
+Before modifying anything:
+
+1. Inspect the full repository tree.
+2. Read the existing important files.
+3. Identify:
+
+   * what already exists
+   * what can be reused
+   * what is redundant
+   * what is too complex for the new learning philosophy
+   * what is missing
+4. Preserve useful existing research and evidence.
+5. Do not recreate content that already exists unless the current form is unsuitable for learning.
+
+Do not blindly implement the file structure below if equivalent content already exists.
+
+Adapt intelligently to the current repository.
+
+---
+
+# TARGET USER EXPERIENCE
+
+I should be able to open the repository from GitHub on my laptop or phone and immediately answer:
+
+### 1. What should I learn today?
+
+→ one roadmap
+
+### 2. What do I need to understand about this topic?
+
+→ concise study notes
+
+### 3. How do I practice it?
+
+→ case/question bank + Gemini Chat
+
+### 4. What should I review shortly before the interview?
+
+→ one compact quick-review document
+
+The repository should optimize for:
+
+* low cognitive load
+* mobile readability
+* short sections
+* simple English
+* clear navigation
+* active learning
+* fast understanding
+* interview relevance
+
+---
+
+# CORE ADDITIONS / REFACTOR
+
+Create or improve the following learning layer.
+
+## 1. `ROADMAP.md`
+
+This should be the main study-navigation file.
+
+It should cover preparation through September 15 and interview-day review on September 16.
+
+Use approximately this progression, but improve it if your analysis finds a better sequence:
+
+### Sep 10
+
+Product thinking + customer discovery
+
+### Sep 11
+
+AI fundamentals + agents + MCP
+
+### Sep 12
+
+Katalon testing domain + AI product judgment
+
+### Sep 13
+
+ShopeeFood marketplace fundamentals
+
+### Sep 14
+
+ShopeeFood business/product cases
+
+### Sep 15
+
+Integrated mock interviews and pressure practice
+
+### Sep 16
+
+Light review only
+
+For each day include only:
+
+* **Goal**
+* **Core concepts**
+* **What I should be able to explain/do by the end**
+* **Suggested Gemini practice**
+* **Optional deeper study if I have extra time**
+
+Do not create hour-by-hour micromanagement.
+
+The roadmap should give direction while allowing me to self-adjust.
+
+---
+
+# 2. `QUICK_REVIEW.md`
+
+Create a compact high-yield review document suitable for reading in approximately 10–15 minutes before an interview.
+
+It should focus on mental reflexes, not definitions.
+
+Include sections such as:
+
+## Katalon product reflex
+
+`User → Workflow → Friction → Evidence → Hypothesis → Validation → Solution → Metric`
+
+## AI product reflex
+
+Questions like:
+
+* Why AI?
+* Why an agent?
+* What context does it need?
+* What can go wrong?
+* What is the cost of being wrong?
+* Can the action be verified?
+* Is it reversible?
+* How much autonomy?
+* Where should humans remain involved?
+* How do we know it creates value?
+
+## ShopeeFood marketplace reflex
+
+`What changed? → When? → Where? → Segment?`
+
+Then check:
+
+* Buyer
+* Merchant
+* Driver
+* Platform
+
+Then:
+
+* hypothesis
+* evidence
+* trade-off
+* first-order effect
+* second-order effect
+
+## Communication reflex
+
+`Clarify → Structure → Reason → Evidence → Recommendation → Trade-off → Stop`
+
+Keep this document extremely concise.
+
+---
+
+# 3. Create a `study/` learning layer
+
+Create concise study notes such as:
+
+* `study/PRODUCT_THINKING.md`
+* `study/CUSTOMER_DISCOVERY.md`
+* `study/AI_AGENTS_MCP.md`
+* `study/TESTING_FOR_PM.md`
+* `study/MARKETPLACE_FOR_PM.md`
+
+If equivalent files already exist, improve/reorganize them instead of duplicating them.
+
+These are **learning documents**, not research reports.
+
+For each important concept use a consistent format where appropriate:
+
+### What is it?
+
+Simple explanation.
+
+### Why should a PM care?
+
+Product relevance.
+
+### Mental model
+
+Short intuitive framework.
+
+### Example
+
+Prefer Katalon or ShopeeFood where relevant.
+
+### Common mistake
+
+What weak PM candidates often misunderstand.
+
+### Interview application
+
+How this concept may appear in an interview.
+
+### Check yourself
+
+2–5 questions I should be able to answer without notes.
+
+Do not write textbook-length explanations.
+
+Prefer intuition and examples over academic definitions.
+
+---
+
+# 4. `study/AI_AGENTS_MCP.md`
+
+This is especially important.
+
+Build a progressive learning path covering at least:
+
+* AI vs ML vs LLM at a useful PM level
+* tokens/context
+* prompting
+* hallucination
+* RAG
+* tool calling
+* AI agents
+* agent loop
+* agent vs chatbot
+* agent vs deterministic workflow
+* memory/context
+* MCP
+* MCP client/server mental model
+* human-in-the-loop
+* agent autonomy
+* permissions
+* reversibility
+* observability
+* AI evaluation
+* cost / latency / quality
+* when NOT to use AI
+* when NOT to use an agent
+
+For each concept, optimize for:
+
+> “Could Dang explain this naturally to a Product Manager or Product Director?”
+
+Do not optimize for engineering-depth completeness.
+
+Explicitly emphasize judgment questions such as:
+
+* Why use AI here?
+* Why use an agent rather than a deterministic workflow?
+* When should the system ask for approval?
+* How should autonomy change according to risk?
+* How do we evaluate whether an AI feature actually improves the user's job?
+
+---
+
+# 5. `study/TESTING_FOR_PM.md`
+
+Teach software testing only to the depth needed for a Katalon PM interview.
+
+Cover at least:
+
+* manual testing
+* automation testing
+* test case
+* test suite
+* regression testing
+* API testing
+* UI / end-to-end testing
+* unit/integration testing at a high level
+* flaky tests
+* CI/CD
+* test maintenance
+* test coverage
+* failure diagnosis
+* bug/defect
+* QA workflow
+
+The most important part should be the workflow:
+
+`Requirement → Test Design → Test Creation → Execution → Failure → Diagnosis → Fix → Regression → Release`
+
+For each stage identify:
+
+* user's job
+* common friction
+* possible AI leverage
+* AI failure risk
+
+Do not turn this into a QA-engineering course.
+
+---
+
+# 6. `study/MARKETPLACE_FOR_PM.md`
+
+Teach me the causal mechanics of a food-delivery marketplace.
+
+Organize around:
+
+## Buyer
+
+Examples:
+
+* traffic
+* conversion
+* order frequency
+* retention
+* pricing
+* promotions
+* selection
+* ETA
+* cancellation
+
+## Merchant
+
+Examples:
+
+* availability
+* order acceptance
+* preparation time
+* menu quality
+* cancellation
+* merchant economics
+* operational capacity
+
+## Driver
+
+Examples:
+
+* supply
+* acceptance
+* utilization
+* idle time
+* pickup waiting time
+* delivery distance
+* earnings
+* incentives
+
+## Platform
+
+Examples:
+
+* orders
+* GMV
+* revenue
+* costs
+* marketplace balance
+* reliability
+* growth
+* profitability
+
+But do NOT teach these as isolated vocabulary.
+
+Emphasize causal chains such as:
+
+`Promotion ↑ → Demand ↑ → Driver shortage → ETA ↑ → Cancellation ↑ → Customer experience ↓`
+
+Teach me to always think about:
+
+* first-order effects
+* second-order effects
+* stakeholder trade-offs
+* segmentation
+* geography
+* time of day
+* supply/demand imbalance
+
+---
+
+# 7. Improve or create case banks
+
+Create:
+
+* `katalon/CASES.md`
+* `shopeefood/CASES.md`
+
+The case banks should primarily contain **questions/cases**, not full memorized answers.
+
+Organize by difficulty:
+
+* Foundation
+* Intermediate
+* Pressure test
+
+Example Katalon areas:
+
+* customer asks for feature X
+* AI adoption is low
+* users don't trust generated output
+* generated tests require heavy editing
+* engineering wants more agent autonomy
+* AI quality improves but retention does not
+* a large enterprise customer requests full automation
+* MCP/tool permission problem
+* competitor launches similar AI functionality
+
+Example ShopeeFood areas:
+
+* orders decline
+* conversion decline
+* ETA rises
+* cancellations rise
+* lunch driver shortage
+* merchant acceptance falls
+* promotions improve volume but hurt economics
+* one city grows while another declines
+* consumers complain about ETA while merchants complain about low order volume
+
+For stronger cases, include only optional interviewer follow-ups underneath.
+
+Do NOT put the complete ideal solution immediately after every question.
+
+I need to think first.
+
+---
+
+# 8. Gemini Chat coach prompt
+
+Create:
+
+`gemini/COACH_PROMPT.md`
+
+This should be short enough that I can easily paste it into Gemini Chat or use it to configure a Gem.
+
+Its purpose is NOT to contain all interview knowledge.
+
+The repository contains the knowledge.
+
+The prompt should tell Gemini how to teach me.
+
+Desired behavior:
+
+* interactive teaching
+* simple explanations
+* concrete examples
+* one concept/question at a time
+* check understanding frequently
+* allow basic questions
+* gradually increase complexity
+* focus on intuition
+* make me apply concepts
+* don't lecture unnecessarily
+* don't give interview answers before I attempt them
+* challenge assumptions
+* ask why / how do you know
+* identify missing considerations
+* improve reasoning over framework memorization
+
+English coaching:
+
+* assume IELTS ~6
+* simple professional English
+* help me sound like a thoughtful junior PM
+* improve clarity and natural PM phrasing
+* do not rewrite everything into C2/native vocabulary
+* encourage spoken answers
+
+Provide a few ultra-short commands/examples I can type into Gemini, such as:
+
+* `Teach me AI agents from where I am.`
+* `Explain MCP simply, then test me.`
+* `Katalon case.`
+* `ShopeeFood case.`
+* `Challenge my answer.`
+* `English replay.`
+* `I have 15 minutes. What should we practice?`
+
+The goal is extremely low interaction overhead.
+
+---
+
+# 9. English phrase bank
+
+Review the existing English material.
+
+Make sure there is one concise phrase bank organized by **thinking function**, not vocabulary topics.
+
+Examples:
+
+## Clarifying
+
+“I’d first clarify…”
+
+## Decomposing
+
+“I’d break this into…”
+
+## Hypothesis
+
+“My initial hypothesis would be…”
+
+## Evidence
+
+“The evidence I’d want to see is…”
+
+## Challenging
+
+“I wouldn’t conclude that yet because…”
+
+## Trade-off
+
+“The main trade-off is…”
+
+## Recommendation
+
+“Given the information we have…”
+
+## Uncertainty
+
+“I don’t have enough information to conclude that, but here’s how I’d investigate it.”
+
+Keep phrases realistic for my English level.
+
+---
+
+# KEEP EXISTING EVIDENCE
+
+Preserve the existing evidence/story material about:
+
+* TDCX
+* FPT Software
+* PRJ226
+* AI experience
+* customer-facing work
+
+Never fabricate:
+
+* metrics
+* interviews
+* customer outcomes
+* product experiments
+* PRJ226 capabilities
+
+If the current repository distinguishes raw evidence from polished stories, preserve that distinction.
+
+This is valuable.
+
+---
+
+# WHAT NOT TO BUILD
+
+Do NOT spend effort adding:
+
+* dashboards
+* web applications
+* Anki automation
+* GitHub Actions
+* daily report generation
+* daily scorecard maintenance
+* automatic planning agents
+* complex scripts
+* database systems
+* learning analytics
+* elaborate session tracking
+* mandatory daily state updates
+
+Do not turn this repository into software.
+
+It is a **study kit**.
+
+---
+
+# EXISTING COMPLEX FILES
+
+If the repository already contains items such as:
+
+* `MASTER_STATE.md`
+* `PLAN.md`
+* scorecards
+* session logs
+* previous coaching state
+
+Do not automatically delete them.
+
+If useful, preserve them as reference/archive.
+
+But make sure the primary navigation no longer requires me to maintain or read them every day.
+
+The new primary learner path should be obvious:
+
+`README → ROADMAP → study material → Gemini / case practice → QUICK_REVIEW`
+
+---
+
+# README
+
+Refactor `README.md` if necessary so that within approximately 30 seconds I understand:
+
+## What this repo is
+
+A portable study kit for:
+
+* Katalon PM Intern
+* ShopeeFood APM
+
+## How to use it
+
+### If I want to know what to study
+
+Open `ROADMAP.md`
+
+### If I want to learn
+
+Open `study/`
+
+### If I want to practice
+
+Open case banks or Gemini
+
+### If I want to practice speaking
+
+Use `gemini/COACH_PROMPT.md`
+
+### If interview is soon
+
+Open `QUICK_REVIEW.md`
+
+Keep README short.
+
+---
+
+# MOBILE-FIRST REQUIREMENTS
+
+Assume I may study directly in GitHub on my phone.
+
+Therefore:
+
+* avoid huge tables where possible
+* keep paragraphs short
+* use meaningful headings
+* use bullets
+* include internal Markdown links
+* avoid unnecessary nesting
+* keep each study file easy to scroll
+* put the highest-value material near the top
+
+Optimize for reading in 10–30 minute sessions.
+
+---
+
+# QUALITY BAR
+
+Before finishing, test the repository against these scenarios:
+
+### Scenario A
+
+I have 10 minutes before leaving home.
+
+Can I immediately find something useful to review?
+
+### Scenario B
+
+I have 30 minutes at a café.
+
+Can I identify today's goal and study one concept without reading unrelated material?
+
+### Scenario C
+
+I open Gemini Chat on my phone.
+
+Can I start useful interactive practice with minimal prompting?
+
+### Scenario D
+
+I don't understand MCP.
+
+Can I go from zero to interview-useful intuition without reading a huge technical document?
+
+### Scenario E
+
+ShopeeFood gives me an order-decline case.
+
+Can I quickly review the marketplace mental model and practice?
+
+### Scenario F
+
+It is the morning of the interview.
+
+Can I review the highest-value mental models in 10–15 minutes?
+
+If any scenario has significant friction, simplify the repository further.
+
+---
+
+# EXECUTION
+
+Do not stop at recommendations.
+
+Perform the repository changes.
+
+You may:
+
+* create missing files
+* reorganize content
+* improve navigation
+* consolidate redundant learning content
+* add internal links
+* simplify learner-facing files
+
+Be conservative about deleting existing material.
+
+Prefer moving obsolete or overly complex planning material to an archive/reference area rather than losing useful work.
+
+---
+
+# FINAL RESPONSE
+
+After implementation, do not give me a long report.
+
+Return only:
+
+1. **What changed**
+2. **The new recommended learner flow**
+3. **Which file I should open first**
+4. **Any existing content you deliberately preserved but deprioritized**
+5. **Any material gap you could not fill confidently without additional evidence**
+
+Keep the final response concise.
+
+The most important success criterion is:
+
+> I can open this repository anywhere, quickly understand what I should learn, learn the necessary concepts without unnecessary depth, and use Gemini Chat as my interactive tutor with almost no setup overhead.

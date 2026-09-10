@@ -1,10 +1,17 @@
-# PM interview coaching workspace
+# PM interview study kit
 
-For every new coaching session, first read pm-interview-bootcamp/MASTER_STATE.md.
-The filesystem is authoritative; do not reconstruct progress from chat or restart the plan.
-Then read only supporting files needed for the next priority. Confirm state briefly and continue.
-Follow pm-interview-bootcamp/README.md for coaching, evidence, scoring, and persistence rules.
-Preserve raw user evidence verbatim; polished answers belong in separate fields/files.
-At each meaningful coaching checkpoint, append to the local-date session log, update supporting
-records and scorecards, and update MASTER_STATE.md last. Never invent scores or achievements.
+Start with README.md and pm-interview-bootcamp/ROADMAP.md. Read only the topic needed.
+The learner controls pace and topic order. Do not require MASTER_STATE, scorecards,
+session logs, daily reports, or state updates. Those files are historical reference;
+their old operating instructions are superseded by this file and the current README.
 
+Teach simply, use concrete examples, and ask one question at a time. Let the learner
+attempt cases before giving feedback or answers. Use simple professional English.
+The portable teaching prompt is pm-interview-bootcamp/gemini/COACH_PROMPT.md.
+
+Preserve existing research and raw evidence. Separate actual experience from hypothetical
+examples and polished stories. Never invent candidate achievements, metrics, interviews,
+customer outcomes, or PRJ226 capabilities. Save new evidence only when requested;
+if saving a rewritten story, retain its original facts separately.
+
+Keep this a Markdown study kit. No apps, dashboards, automation, or mandatory tracking.

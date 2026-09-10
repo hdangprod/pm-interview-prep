@@ -1,5 +1,7 @@
 # Adaptive preparation plan v2
 
+> Historical plan. [ROADMAP](ROADMAP.md) is the single active study schedule; the allocations and tracking requirements below are no longer obligations.
+
 Created 2026-09-10. Interview date 2026-09-16. Research-informed but diagnosis-pending; this is a provisional allocation, not a fixed syllabus. Candidate reports approximately 4–5 focused hours/day; interview times remain unknown and do not block training.
 
 ## Priority rule and training loop

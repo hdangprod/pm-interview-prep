@@ -1,5 +1,7 @@
 # Katalon case bank
 
+> Historical case queue and attempt record. Use [CASES](CASES.md) for current practice; no logging or fixed sequence required.
+
 All cases are coach-created simulations, not actual Katalon metrics, incidents, or leaked questions.
 No cases completed or failed. Ask one prompt at a time; do not reveal a model answer before an attempt.
 

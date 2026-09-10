@@ -1,7 +1,9 @@
 # Katalon readiness
 
+> Historical assessment, not a daily task. The former rubric is preserved in [the old coaching protocol](../reference/legacy-coaching-protocol.md). Start learning through [ROADMAP](../ROADMAP.md).
+
 Updated 2026-09-10. Overall readiness: UNKNOWN. Observed coverage: 6/13 at initial-answer level. First answer evaluated; follow-up pending. One response does not establish mastery.
-Self-reported experience does not justify a score. Use the anchored rubric in ../README.md.
+Self-reported experience does not justify a score. Historical rubric: ../reference/legacy-coaching-protocol.md.
 
 | Competency | Score / 10 | Evidence ID | Confidence | Next assessment |
 | --- | --- | --- | --- | --- |
@@ -42,5 +44,4 @@ Observed gaps: operational definitions of quality/reuse; constrained prioritizat
 Unobserved technical, MCP and behavioral dimensions remain UNKNOWN.
 Next: K-D01-F1 constrained test choice; see case bank.
 
-Final readiness requires the evidence gates in README; syllabus completion or assisted retries do not establish readiness.
-
+The former readiness gates are retained in ../reference/legacy-coaching-protocol.md as history, not current learner obligations.

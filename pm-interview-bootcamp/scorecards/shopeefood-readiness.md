@@ -1,7 +1,9 @@
 # ShopeeFood readiness
 
+> Historical assessment, not a daily task. The former rubric is preserved in [the old coaching protocol](../reference/legacy-coaching-protocol.md). Start learning through [ROADMAP](../ROADMAP.md).
+
 Updated 2026-09-10. Overall readiness: UNKNOWN. Observed coverage: 0/12. No baseline answer received.
-Self-reported experience does not justify a score. Use the anchored rubric in ../README.md.
+Self-reported experience does not justify a score. Historical rubric: ../reference/legacy-coaching-protocol.md.
 
 | Competency | Score / 10 | Evidence ID | Confidence | Next assessment |
 | --- | --- | --- | --- | --- |
@@ -34,5 +36,4 @@ Observed weaknesses: none assessed.
 Risks are hypotheses in ../hiring-models.md, not low scores.
 Next: administer S-D01 after K-D01.
 
-Final readiness requires the evidence gates in README; syllabus completion or assisted retries do not establish readiness.
-
+The former readiness gates are retained in ../reference/legacy-coaching-protocol.md as history, not current learner obligations.
