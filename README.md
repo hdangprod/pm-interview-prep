@@ -5,6 +5,7 @@ Prepare for **Katalon PM Intern** and **ShopeeFood APM** on September 16, 2026.
 **Start here: [ROADMAP](pm-interview-bootcamp/ROADMAP.md).**
 
 - **10 minutes / interview soon:** [Quick review](pm-interview-bootcamp/QUICK_REVIEW.md).
+- **Learn with NotebookLM:** [Comprehensive master source](NOTEBOOKLM_MASTER_SOURCE.md) for audio, mind maps, quizzes, and flashcards; keep active case practice alongside it.
 - **Learn one topic:** [Study notes](pm-interview-bootcamp/study/README.md).
 - **Practice a case:** [Katalon](pm-interview-bootcamp/katalon/CASES.md) · [ShopeeFood](pm-interview-bootcamp/shopeefood/CASES.md).
 - **Speak and get feedback:** [Copy the Gemini coach prompt](pm-interview-bootcamp/gemini/COACH_PROMPT.md).
