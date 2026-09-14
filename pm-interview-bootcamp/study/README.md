@@ -6,6 +6,7 @@ Each note works in a 10–30-minute visit. Read one section, explain its example
 
 - [Product thinking](PRODUCT_THINKING.md): problems, priorities, requirements, metrics and validation.
 - [Customer discovery](CUSTOMER_DISCOVERY.md): real behavior, personas, JTBD and problem statements.
+- [Agile for Product Managers](AGILE_FOR_PM.md): Agile from first principles, Scrum and Kanban, delivery trade-offs, interview cases, and an honest PRJ226 mapping.
 - [AI, agents and MCP](AI_AGENTS_MCP.md): progressive path from zero to product judgment. New to MCP? [Start with the connection example](AI_AGENTS_MCP.md#4-mcp-connects-the-parts).
 - [Testing for PMs](TESTING_FOR_PM.md): QA workflow, useful tests and AI opportunities.
 - [Marketplace for PMs](MARKETPLACE_FOR_PM.md): buyer/merchant/driver causes and effects. Order-decline case? [Start here](MARKETPLACE_FOR_PM.md#diagnose-an-order-decline).

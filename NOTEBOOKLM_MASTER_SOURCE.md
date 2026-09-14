@@ -29,27 +29,28 @@ Company names identify preparation tracks. The examples do not claim to describe
 - [Part 5: Hypotheses and evidence](#part-5-hypotheses-and-evidence)
 - [Part 6: Metrics from zero](#part-6-metrics-from-zero)
 - [Part 7: Trade-offs and decision making](#part-7-trade-offs-and-decision-making)
-- [Part 8: Software testing for a PM](#part-8-software-testing-for-a-pm)
-- [Part 9: AI fundamentals for a PM](#part-9-ai-fundamentals-for-a-pm)
-- [Part 10: RAG, tools, agents and MCP](#part-10-rag-tools-agents-and-mcp)
-- [Part 11: AI product judgment](#part-11-ai-product-judgment)
-- [Part 12: Katalon product case mental models](#part-12-katalon-product-case-mental-models)
-- [Part 13: Marketplace thinking from zero](#part-13-marketplace-thinking-from-zero)
-- [Part 14: Marketplace systems thinking](#part-14-marketplace-systems-thinking)
-- [Part 15: Marketplace diagnosis](#part-15-marketplace-diagnosis)
-- [Part 16: Unit economics from zero](#part-16-unit-economics-from-zero)
-- [Part 17: ShopeeFood case mental models](#part-17-shopeefood-case-mental-models)
-- [Part 18: Product communication](#part-18-product-communication)
-- [Part 19: Behavioral interview thinking](#part-19-behavioral-interview-thinking)
-- [Part 20: Common beginner failure modes](#part-20-common-beginner-failure-modes)
-- [Part 21: Mini case walkthroughs](#part-21-mini-case-walkthroughs)
-- [Part 22: Concept comparisons](#part-22-concept-comparisons)
-- [Part 23: Glossary](#part-23-glossary)
-- [Part 24: Active recall question bank](#part-24-active-recall-question-bank)
-- [Part 25: Flashcard-ready facts](#part-25-flashcard-ready-facts)
-- [Part 26: Audio-ready recaps](#part-26-audio-ready-recaps)
+- [Part 8: Agile Product Delivery & Execution](#part-8-agile-product-delivery--execution)
+- [Part 9: Software testing for a PM](#part-9-software-testing-for-a-pm)
+- [Part 10: AI fundamentals for a PM](#part-10-ai-fundamentals-for-a-pm)
+- [Part 11: RAG, tools, agents and MCP](#part-11-rag-tools-agents-and-mcp)
+- [Part 12: AI product judgment](#part-12-ai-product-judgment)
+- [Part 13: Katalon product case mental models](#part-13-katalon-product-case-mental-models)
+- [Part 14: Marketplace thinking from zero](#part-14-marketplace-thinking-from-zero)
+- [Part 15: Marketplace systems thinking](#part-15-marketplace-systems-thinking)
+- [Part 16: Marketplace diagnosis](#part-16-marketplace-diagnosis)
+- [Part 17: Unit economics from zero](#part-17-unit-economics-from-zero)
+- [Part 18: ShopeeFood case mental models](#part-18-shopeefood-case-mental-models)
+- [Part 19: Product communication](#part-19-product-communication)
+- [Part 20: Behavioral interview thinking](#part-20-behavioral-interview-thinking)
+- [Part 21: Common beginner failure modes](#part-21-common-beginner-failure-modes)
+- [Part 22: Mini case walkthroughs](#part-22-mini-case-walkthroughs)
+- [Part 23: Concept comparisons](#part-23-concept-comparisons)
+- [Part 24: Glossary](#part-24-glossary)
+- [Part 25: Active recall question bank](#part-25-active-recall-question-bank)
+- [Part 26: Flashcard-ready facts](#part-26-flashcard-ready-facts)
+- [Part 27: Audio-ready recaps](#part-27-audio-ready-recaps)
 - [Sources and evidence boundaries](#sources-and-evidence-boundaries)
-- [Part 27: Final 15-minute review](#part-27-final-15-minute-review)
+- [Part 28: Final 15-minute review](#part-28-final-15-minute-review)
 
 ## Part 0: How to use this source
 
@@ -703,13 +704,189 @@ For a reversible, limited action, you can often learn through a small trial. For
 
 **Check yourself:** What would make you choose better preparation estimates over more driver incentives when both appear capable of reducing ETA?
 
-## Part 8: Software testing for a PM
+## Part 8: Agile Product Delivery & Execution
+
+**P0 — MUST KNOW**
+
+The detailed learner note is [Agile for Product Managers](pm-interview-bootcamp/study/AGILE_FOR_PM.md). This part contains the interview-critical model for audio, mind maps, quizzes, and flashcards.
+
+### 8.1 Why Agile exists
+
+Complex product development contains uncertainty about customer needs, technology, priorities, and solution behavior. A large plan can hide wrong assumptions until late.
+
+```text
+Risky model:
+plan everything → build for months → learn late that assumptions were wrong
+
+Agile model:
+valuable problem or hypothesis → small Increment → inspect → learn → adapt
+```
+
+Agile is primarily about delivering value incrementally, collaborating, getting feedback, and adapting under uncertainty. It is not defined by two-week Sprints or Daily Scrums. Planning, documentation, and contracts still matter; the [Agile Manifesto](https://agilemanifesto.org/) values people and interactions, working software, customer collaboration, and responding to change more when those concerns are in tension.
+
+The [twelve principles](https://agilemanifesto.org/principles) can be remembered as eight themes: customer value, frequent delivery, responsiveness, business–engineering collaboration, sustainable pace, technical quality, simplicity, and reflection.
+
+### 8.2 Agile, Scrum, and Kanban
+
+- **Agile:** philosophy expressed through values and principles.
+- **Scrum:** a lightweight framework that helps a small self-managing team generate value through adaptive solutions to complex problems.
+- **Kanban:** a strategy for optimizing value flow by defining and visualizing workflow, controlling WIP, managing items actively, and improving flow.
+
+Analogy: Agile is the travel philosophy; Scrum is a fixed rhythm for checking the route; Kanban makes the road and traffic visible and limits how many vehicles enter. Teams may use Scrum, Kanban, or complementary practices. Not every product team must use Scrum.
+
+### 8.3 Official Scrum versus common practice
+
+The [official Scrum Guide](https://scrumguides.org/scrum-guide.html) is purposefully incomplete. It defines essential accountabilities, events, artifacts, commitments, and rules; teams may add context-specific techniques.
+
+| **OFFICIAL SCRUM** | **COMMON OR OPTIONAL PRACTICE—not required Scrum** |
+|---|---|
+| Product Owner, Developers, Scrum Master | User stories and acceptance criteria |
+| Sprint, Planning, Daily Scrum, Review, Retrospective | Story points and planning poker |
+| Product Backlog, Sprint Backlog, Increment | Velocity and Definition of Ready |
+| Product Goal, Sprint Goal, Definition of Done | Burndown/burnup charts and a two-week Sprint |
+| Product Backlog refinement is an ongoing activity, not a formal event | A scheduled “refinement meeting” is one way to perform it |
+
+The official Sprint length is one month or less. A usable Increment may be released before Sprint Review; Review is not a release gate.
+
+### 8.4 Scrum theory and accountabilities
+
+Scrum uses **empiricism**:
+
+- **Transparency:** goals, work, quality, and results are sufficiently visible.
+- **Inspection:** the team and stakeholders examine evidence frequently.
+- **Adaptation:** they change the product plan or working method when evidence reveals a meaningful gap.
+
+The three accountabilities are:
+
+- **Product Owner:** accountable for maximizing product value and effective Product Backlog management—Product Goal, clear items, order, visibility, and understanding. One person, not a committee.
+- **Developers:** create the usable Increment; create and adapt the Sprint Backlog; adhere to DoD; select what they can do and decide how to do it.
+- **Scrum Master:** accountable for establishing Scrum and enabling team effectiveness; coaches, helps remove impediments, and supports productive events. Not a command manager or meeting secretary.
+
+The whole Scrum Team is accountable for creating a valuable, useful Increment every Sprint.
+
+**Product Manager versus Product Owner:** Product Owner is a Scrum accountability. Product Manager is not defined by Scrum and often has broader market, strategy, discovery, and outcome responsibilities. One person may hold both responsibilities, or an organization may split them. Do not claim one universal structure; keep strategy, discovery, value, and delivery decisions connected.
+
+### 8.5 Artifacts and commitments through one example
+
+**ILLUSTRATIVE EXAMPLE:** A testing-product team wants to help QA engineers diagnose failed automated tests with trustworthy evidence.
+
+```text
+Product Goal: trustworthy failure diagnosis before a release decision
+└── Product Backlog: emergent, ordered product work
+    └── Sprint Backlog: Developers' current plan
+        ├── Sprint Goal: connect one failure to relevant logs in one view
+        ├── selected Product Backlog items
+        └── delivery plan
+            └── Increment: usable linked-evidence view
+                └── meets Definition of Done
+                    └── feedback adapts Product Backlog
+```
+
+- **Product Backlog + Product Goal:** all currently known work needed to improve the product, ordered toward its longer-term target.
+- **Sprint Backlog + Sprint Goal:** why this Sprint matters, selected work, and Developers' changing plan for delivery.
+- **Increment + Definition of Done:** a usable, integrated, verified step meeting the product's shared quality standard.
+
+### 8.6 Events are decision points, not rituals
+
+| Event | Purpose | PM/PO care point |
+|---|---|---|
+| **Sprint** | Fixed-length container where ideas become value | No change should endanger Sprint Goal; quality does not decrease; scope can be clarified/renegotiated |
+| **Sprint Planning** | Whole Scrum Team decides why the Sprint is valuable, what can be Done, and how | Bring ordered priorities and context; Developers select work and decide the plan |
+| **Daily Scrum** | Developers inspect progress toward Sprint Goal and adapt the near-term plan | Do not turn it into a manager status report |
+| **Sprint Review** | Scrum Team and stakeholders inspect Sprint outcome and changed environment; adapt what to do next | Review product, evidence, Product Goal progress, and Product Backlog |
+| **Sprint Retrospective** | Scrum Team plans ways to improve quality and effectiveness | Inspect people, interactions, process, tools, and DoD without blame |
+
+**Essential distinction:** Review the **product and next direction** with stakeholders. Retrospect on the **Scrum Team's way of working**.
+
+### 8.7 Backlog, stories, criteria, and Done
+
+An ordered Product Backlog reflects current value decisions. It should not be a graveyard of every request. Order work using customer problem, Product Goal, evidence, value, reach, effort, risk, dependencies, learning value, cost of delay, and opportunity cost.
+
+Refinement creates sufficient shared understanding by splitting and clarifying near-term items. Do not specify every future idea in detail.
+
+**User story—common, not required:** “As a QA engineer, I want to inspect an AI-proposed test change so that I can decide whether it preserves intended behavior.” A story is a possible capability, not the customer problem and not the only valid requirement format.
+
+**Acceptance criteria** are item-specific behavior, such as “rejecting leaves the test unchanged.” **Definition of Done** is the Increment-wide quality state. Coding finished may still omit review, testing, integration, permissions, required documentation, or operational readiness. Teams define a context-appropriate DoD; Scrum does not prescribe one universal checklist.
+
+### 8.8 Estimation and velocity
+
+Estimates are forecasts, not guarantees. Story points, planning poker, and velocity are common practices, not required Scrum elements.
+
+- Five story points do not equal five days. Points are relative and locally defined.
+- Velocity can support forecasting for the same stable team.
+- Do not compare teams, rate individuals, demand point growth, or equate velocity with customer value.
+- Capacity, work mix, uncertainty, incidents, and DoD can change delivery. Investigate before judging.
+
+```text
+Delivery metric ≠ product outcome
+velocity ↑ does not prove customer value ↑
+```
+
+Useful evidence can include cycle time, lead time with a stated definition, throughput, WIP, work item age, predictability, escaped defects, Sprint Goal success, and product outcomes. The 2025 Kanban Guide requires WIP, throughput, work item age, and cycle time for a Kanban system; Scrum does not require those flow metrics.
+
+### 8.9 Discovery and delivery
+
+- **Discovery:** Are we solving the right problem? Which solution is promising? Which assumption is risky?
+- **Delivery:** Can we build, verify, ship, operate, and improve it correctly?
+
+They overlap. Engineers reveal feasibility during discovery; delivered Increments create customer evidence. **Dual-Track Agile** is a common product-development practice, not official Scrum.
+
+```text
+customer discovery → hypothesis → prototype/experiment → evidence
+→ backlog decision → delivery → outcome → learning
+```
+
+### 8.10 Changing priorities and Engineering disagreement
+
+When a stakeholder requests an urgent mid-Sprint change:
+
+1. Clarify the user harm, deadline, evidence, and reach.
+2. Distinguish a production incident from a normal feature request.
+3. Check impact on the Sprint Goal and quality.
+4. Ask Engineering about size, uncertainty, dependency, and safest mitigation.
+5. Make opportunity cost and displaced work visible.
+6. Wait/reorder, swap scope while preserving the goal, mitigate harm, or—only if the goal is obsolete—have the Product Owner consider cancellation.
+
+Agile welcomes useful learning, not uncontrolled change.
+
+When Engineering disagrees, restate the shared goal, invite the technical evidence, compare assumptions and consequences, explore a smaller slice, then make the accountable decision and change condition visible. Product brings problem, priority, constraints, and outcome; Engineering brings implementation, effort, dependency, and operational risk.
+
+### 8.11 Technical debt, bugs, and missed goals
+
+Technical debt is not a synonym for “rewrite.” It describes internal deficiencies that add future change effort or risk:
+
+```text
+technical weakness → slower/riskier change → incidents and harder testing
+→ greater effort → reduced customer responsiveness
+```
+
+Prioritize bugs, features, debt, and instrumentation by severity, reach, strategic value, risk, urgency, dependencies, learning value, and cost of delay—not label. Ask for the smallest debt reduction tied to an observable product consequence.
+
+If a Sprint Goal is missed, do not say “Engineers must work faster.” Inspect unclear scope, excess WIP, dependencies, complexity, weak refinement, incidents, changing assumptions, interruptions, capacity, and hidden quality work.
+
+- At **Review**, show the actual Done Increment and decide what product work matters next.
+- At **Retrospective**, improve the team's working system.
+- Then reorder unfinished work; do not carry it over automatically.
+
+### 8.12 Honest PRJ226 mapping
+
+**SELF-REPORT:** PRJ226 was primarily a solo side project and did not formally use Agile or Scrum. The repository does not support claims of Scrum roles, Sprints, events, story points, velocity, users, outcomes, or specific iterative practices.
+
+Safe answer:
+
+> “PRJ226 was primarily a solo side project, and I did not formally run Agile or Scrum. I would not claim a Scrum Team, Sprints, or ceremonies that did not exist. I understand the professional framework and can explain how I would apply Product Goal, ordered backlog, Sprint Goal, Done Increment, Review, and Retrospective in a cross-functional team.”
+
+Any detailed PRJ226 Scrum design is **HYPOTHETICAL / INTERVIEW EXERCISE**, never project history. Before claiming transferable iterative behavior, supply one real objective, decision, action, observed result, and learning.
+
+**Check yourself:** A high-value request arrives halfway through a Sprint. Which facts determine whether you wait, renegotiate scope, interrupt for harm, or consider replanning?
+
+## Part 9: Software testing for a PM
 
 **P0 — MUST KNOW**
 
 Testing creates evidence about whether software behaves as intended and where release risk remains. It cannot establish that every possible behavior is correct. A PM needs to understand the tester's job well enough to choose useful product improvements.
 
-### 8.1 One running example: e-commerce checkout
+### 9.1 One running example: e-commerce checkout
 
 Throughout this part, use this **ILLUSTRATIVE EXAMPLE**:
 
@@ -727,7 +904,7 @@ A **bug** or **defect** is a flaw. The two words are often used interchangeably.
 
 **QA**, or quality assurance, concerns practices that help a team produce quality software. Testing is part of this work. Clear requirements, risk discussion, and preventing repeated mistakes also contribute. QA is not simply “the team that finds bugs after development.”
 
-### 8.2 Manual and automated testing
+### 9.2 Manual and automated testing
 
 **Manual testing** uses a person to perform checks or explore behavior. A tester might notice that a payment error message is confusing and hides the next action. Human exploration is valuable when the right behavior or likely failure is still unclear.
 
@@ -737,7 +914,7 @@ Automation has setup, execution, diagnosis, and maintenance costs. A stable, fre
 
 Neither mode guarantees quality. An automated weak assertion is still weak. Manual testing can also overlook an important condition. Choose the method according to risk, repetition, clarity, and cost.
 
-### 8.3 Unit, integration, API, UI and end-to-end testing
+### 9.3 Unit, integration, API, UI and end-to-end testing
 
 These categories describe different dimensions. **Unit, integration, and end-to-end** mainly describe scope. **API and UI** describe the interface used. They can overlap.
 
@@ -749,7 +926,7 @@ These categories describe different dimensions. **Unit, integration, and end-to-
 
 Narrow tests can fail quickly and explain a local fault. Broader tests show whether the journey works together but often involve more dependencies and diagnosis effort. The mix should reflect product risks. Do not infer release confidence from the count at one level alone.
 
-### 8.4 Regression, maintenance, coverage and CI/CD
+### 9.4 Regression, maintenance, coverage and CI/CD
 
 **Regression testing** checks whether a change broke behavior that previously worked. After changing coupon logic, rerun important payment and order checks as well as coupon checks. Regression testing can be manual or automated.
 
@@ -763,7 +940,7 @@ A **flaky test** produces inconsistent results under apparently unchanged releva
 
 **CD** can mean continuous delivery, which keeps software ready for release, or continuous deployment, which automatically releases passing changes under a team's process. Clarify which meaning applies. A green CI report is evidence from those checks, not proof that all users will have a correct experience.
 
-### 8.5 The QA workflow, stage by stage
+### 9.5 The QA workflow, stage by stage
 
 **Requirement → understand expected behavior → design tests → create tests → execute → capture failure → investigate → diagnose → fix → regression → release confidence.**
 
@@ -879,7 +1056,7 @@ After fixing duplicate payment, include retries and failed-payment recovery, not
 
 The goal is a defensible decision about risk. “All selected checks passed, but retry behavior was not tested” communicates more than “quality is excellent.”
 
-### 8.6 Test failure diagnosis: six different explanations
+### 9.6 Test failure diagnosis: six different explanations
 
 **Real application defect:** The requirement says one charge; the application creates two. Fix the application and retain the check that exposed it.
 
@@ -895,7 +1072,7 @@ The goal is a defensible decision about risk. “All selected checks passed, but
 
 These categories can overlap. The purpose is to ask better questions, not force every failure into exactly one box.
 
-### 8.7 What an AI testing feature should earn
+### 9.7 What an AI testing feature should earn
 
 An AI-generated test should be relevant, executable, meaningful, maintainable, and safe to use in context. Test execution is one requirement. Correct assertions and risk coverage are separate requirements.
 
@@ -905,11 +1082,11 @@ Useful evaluation includes known defects and non-defective cases. Does the test 
 
 **Audio recap — Testing:** Imagine a checkout test turning green because someone removed the duplicate-charge check. The report improved, but the buyer became less protected. A test failure is evidence that needs diagnosis. It may come from the application, test, data, environment, or dependency. Ask what the test was supposed to prove and whether that meaning survived the repair.
 
-## Part 9: AI fundamentals for a PM
+## Part 10: AI fundamentals for a PM
 
 **P0 — MUST KNOW**
 
-### 9.1 AI, machine learning and LLMs
+### 10.1 AI, machine learning and LLMs
 
 **Artificial intelligence, or AI,** is the broad field of building systems that perform tasks associated with intelligence, such as recognizing patterns, understanding language, or planning actions.
 
@@ -919,7 +1096,7 @@ A **large language model, or LLM,** is a machine-learning model trained on large
 
 The relationship is broad to specific: AI includes ML; LLMs are one kind of ML model. Not every AI product needs an LLM. Predicting an ETA from structured signals may use predictive models. Checking whether an order ID is missing can use a simple rule. Explaining a messy failure report may benefit from an LLM.
 
-### 9.2 Tokens and the context window
+### 10.2 Tokens and the context window
 
 A **token** is a unit a model processes, often a word or part of a word in text. Token count affects how much input and output a system can handle, and can influence cost and latency. One token does not always equal one word; language and content affect the count.
 
@@ -929,7 +1106,7 @@ For test generation, the desk may contain the requirement, relevant test example
 
 Do not assume that a long conversation guarantees reliable memory of every detail. Stored information must still be selected and supplied when needed. The product should handle missing context explicitly.
 
-### 9.3 Prompts, hallucination and grounding
+### 10.3 Prompts, hallucination and grounding
 
 A **prompt** provides instructions, task information, examples, or constraints to the model. A useful prompt says what outcome is needed, what evidence to use, and how to handle uncertainty.
 
@@ -941,7 +1118,7 @@ A **hallucination** is plausible output that is false or unsupported by the rele
 
 Better prompting may improve a task. It cannot solve an irrelevant user problem, create missing permissions, or replace product-level enforcement of action boundaries.
 
-### 9.4 Confidence is not correctness
+### 10.4 Confidence is not correctness
 
 A model saying “I am 95% confident” does not automatically mean it is correct 95% of the time. Fluent wording, output probability, and factual truth are different things.
 
@@ -951,7 +1128,7 @@ A model saying “I am 95% confident” does not automatically mean it is correc
 
 For high-impact decisions, ask whether the output can be checked independently and what happens when the model is wrong. Do not use a self-reported score as the only permission to execute.
 
-### 9.5 Structured output
+### 10.5 Structured output
 
 **Structured output** follows a defined shape, such as fields for diagnosis, evidence, proposed change, and unresolved questions. This helps software and people use the result consistently.
 
@@ -961,11 +1138,11 @@ Correct structure does not prove correct content. A perfectly formatted report c
 
 **Check yourself:** If a model returns a valid structured response with a confident diagnosis, what still needs verification before changing the test?
 
-## Part 10: RAG, tools, agents and MCP
+## Part 11: RAG, tools, agents and MCP
 
 **P0 — MUST KNOW**, with optional depth clearly marked below.
 
-### 10.1 One continuous testing example
+### 11.1 One continuous testing example
 
 **ILLUSTRATIVE EXAMPLE:** A QA engineer asks an assistant to investigate failed checkout test T-42. The requirement is in Jira, test assets are in a testing project, application code is in GitHub, and execution evidence is in CI.
 
@@ -973,13 +1150,13 @@ The requirement says a failed payment must not show confirmation. The test faile
 
 These system names describe an imagined workflow. T-42 is a teaching identifier. This is not a claim that the candidate or Katalon implemented the specific integration.
 
-### 10.2 LLM alone: general knowledge without private project evidence
+### 11.2 LLM alone: general knowledge without private project evidence
 
 Given only “T-42 failed,” an LLM can explain common failure categories and suggest questions. It cannot reliably know the current Jira requirement, private code, exact CI run, or project permissions unless the application supplies or retrieves them.
 
 It may generate a plausible explanation anyway. A good product should encourage an explicit missing-information response. “I need the expected behavior and run evidence” is more useful than an invented root cause.
 
-### 10.3 Context: putting relevant evidence on the desk
+### 11.3 Context: putting relevant evidence on the desk
 
 Supply the current requirement, the failing assertion, the relevant response, and the matching build identifier. The model can now compare expected and observed behavior.
 
@@ -987,7 +1164,7 @@ Context needs **relevance, freshness, identity, and permission**. Logs from a di
 
 More context is useful when it adds decisive evidence. It is wasteful when it adds noise or exposes unrelated data. The PM question is what the task needs, not how much text the system can collect.
 
-### 10.4 RAG: retrieve relevant material before answering
+### 11.4 RAG: retrieve relevant material before answering
 
 **Retrieval-augmented generation, or RAG,** finds relevant source material and supplies it as context for generation. Retrieval means looking up useful information; it can use keyword search, semantic similarity, metadata, or a combination. RAG does not retrain the model each time. [Google Cloud's RAG overview](https://cloud.google.com/vertex-ai/generative-ai/docs/rag-engine/rag-overview)
 
@@ -997,7 +1174,7 @@ There are at least two separate failure points. Retrieval can return the wrong o
 
 If sources conflict, show the conflict and seek an authoritative clarification. Do not merge incompatible requirements into a new rule.
 
-### 10.5 Tool calling: from text to an operation
+### 11.5 Tool calling: from text to an operation
 
 With ordinary generation, the model produces content. With **tool calling**, it proposes an operation and arguments that the application can validate and execute.
 
@@ -1011,7 +1188,7 @@ A tool can read information or change something. Reading a test and applying a t
 
 If a write times out, completion is uncertain. The system should check the resulting state or operation status before retrying. Blind retries can duplicate actions. The assistant saying “done” is not evidence that the external system changed correctly.
 
-### 10.6 Agent: choosing the next step from what happened
+### 11.6 Agent: choosing the next step from what happened
 
 An **LLM-based agent** uses a model to choose actions as observations arrive. A helpful loop is:
 
@@ -1023,7 +1200,7 @@ In the T-42 example, a fixed process could always retrieve a run and format a re
 
 An agent does not need unlimited autonomy. It can investigate through permitted reads and still need a person to approve a write. Set stop conditions for missing access, conflicting evidence, repeated failures, excessive time, and actions outside scope.
 
-### 10.7 Chatbot, workflow, agent and deterministic automation
+### 11.7 Chatbot, workflow, agent and deterministic automation
 
 A **chatbot** is a conversational interface. It can be a simple question-answer system or the interface to an agent. Chatbot and agent are not opposites.
 
@@ -1033,7 +1210,7 @@ A **workflow** is an organized sequence of steps. In this comparison, a fixed wo
 
 An **agent** is useful when choosing the next action is part of the problem. If every task follows the same known sequence, a fixed workflow may be easier to verify and operate. Combining deterministic controls with flexible interpretation is often a sensible design hypothesis.
 
-### 10.8 MCP: a common connection model
+### 11.8 MCP: a common connection model
 
 **Model Context Protocol, or MCP,** standardizes how AI applications exchange context and access exposed capabilities. The **host** is the AI application; its **client** communicates with an MCP **server**. The server exposes tools, resources such as data, or reusable prompt templates. It may run locally or remotely and may use underlying APIs. MCP does not define the application's reasoning strategy. [Official MCP architecture](https://modelcontextprotocol.io/docs/learn/architecture)
 
@@ -1045,7 +1222,7 @@ For the imagined T-42 investigation, an application could use connections to rea
 
 The user benefit is potentially less manual copying between tools and a more reusable connection approach. That benefit should be tested against the actual workflow, connection quality, and maintenance cost.
 
-### 10.9 MCP versus direct API integration
+### 11.9 MCP versus direct API integration
 
 **P1 — SHOULD KNOW**
 
@@ -1066,7 +1243,7 @@ These are **decision considerations**, not guaranteed advantages.
 
 **ILLUSTRATIVE Katalon-track decision:** If customers work in several AI applications and need the same authorized testing evidence, reusable exposure may be valuable. If the immediate task is one tightly controlled internal CI check, a direct connection may be simpler. Compare required capabilities, reliable task completion, permissions, debugging effort, and total maintenance. “MCP is newer” is not a user benefit.
 
-### 10.10 Fine-tuning and memory
+### 11.10 Fine-tuning and memory
 
 **P2 — OPTIONAL DEPTH**
 
@@ -1076,13 +1253,13 @@ These are **decision considerations**, not guaranteed advantages.
 
 **Check yourself:** In the T-42 scenario, which problem needs retrieval, which needs a tool, and which might justify an agent choosing the next step?
 
-## Part 11: AI product judgment
+## Part 12: AI product judgment
 
 **P0 — MUST KNOW**
 
 The product question is whether the system helps a real user complete a valuable job at an acceptable cost and risk. More AI, a larger model, or more autonomy does not establish that value.
 
-### 11.1 Ask why this amount of AI is needed
+### 12.1 Ask why this amount of AI is needed
 
 Move through these questions:
 
@@ -1097,7 +1274,7 @@ Move through these questions:
 
 **ILLUSTRATIVE EXAMPLE:** A rule can check whether a required test field is empty. An LLM may help interpret ambiguous requirement text. An agent may help investigate a failure whose next evidence source is unknown. Choosing the simplest adequate approach is product judgment.
 
-### 11.2 Human-in-the-loop
+### 12.2 Human-in-the-loop
 
 **Human-in-the-loop** means a person participates at a meaningful decision point. They may provide missing context, approve a proposed change, correct an error, or handle an exception.
 
@@ -1107,7 +1284,7 @@ Review also has costs. If every harmless step needs approval, the workflow becom
 
 **ILLUSTRATIVE HYPOTHESIS:** Showing a clear assertion difference → easier verification → faster informed decisions → potentially greater use. If the view overwhelms users with irrelevant detail, it may instead increase abandonment. Test the task, not just whether people like the screen.
 
-### 11.3 An intuitive autonomy spectrum
+### 12.3 An intuitive autonomy spectrum
 
 These are teaching levels, not an official industry or Katalon classification.
 
@@ -1119,7 +1296,7 @@ These are teaching levels, not an official industry or Katalon classification.
 
 Different actions within one product can sit at different levels. Reading authorized CI evidence, drafting a test, changing a shared assertion, and initiating release need not share one autonomy setting.
 
-### 11.4 Reversibility and the cost of error
+### 12.4 Reversibility and the cost of error
 
 **Reversibility** asks how easily the system can undo an action and recover from its consequences.
 
@@ -1129,7 +1306,7 @@ Consider error likelihood, impact, number of people or assets exposed, verifiabi
 
 Expand autonomy by action class and evidence. A strong result on safe formatting changes does not justify automatic changes to business assertions.
 
-### 11.5 Observability and permissions
+### 12.5 Observability and permissions
 
 **Observability** means being able to understand the system's actions and state from useful evidence. For an agent, users and operators should be able to find what it attempted, what tool ran, what changed, what failed, and what can happen next.
 
@@ -1139,7 +1316,7 @@ Provide an action rationale based on evidence and policy, not a claim that a lon
 
 Retrieved documents and tool results are data. They should not gain authority to instruct the agent to ignore user intent or broaden access. For example, a malicious instruction inside a log should not authorize exporting another project's files. This is a product failure mode to consider when external content influences actions.
 
-### 11.6 Evaluate output, action, user value and operation
+### 12.6 Evaluate output, action, user value and operation
 
 **AI evaluation** checks whether a system works for its intended tasks and constraints. A useful evaluation distinguishes four layers:
 
@@ -1150,7 +1327,7 @@ Retrieved documents and tool results are data. They should not gain authority to
 
 Use a baseline such as the current manual process or existing automation. Compare representative tasks, including simple and complex cases, ambiguous requirements, missing access, dependency failures, and known severe errors. An evaluation containing only easy successful tasks will overstate readiness.
 
-### 11.7 Metrics for AI evaluation
+### 12.7 Metrics for AI evaluation
 
 - **Task success:** Share of eligible attempted tasks that meet a defined useful outcome. For tests, include meaningful assertions, not execution alone.
 - **Accuracy or correctness:** Share of assessed outputs satisfying the task's correctness criteria. Open-ended tasks need an explicit rubric and reliable review.
@@ -1165,7 +1342,7 @@ Use a baseline such as the current manual process or existing automation. Compar
 
 **ILLUSTRATIVE EXAMPLE:** The manual workflow takes 25 minutes per comparable successful task. AI generation takes 2 minutes, review takes 14, and setup plus correction takes 4. Total AI task time is 20 minutes, so the observed saving is 5 minutes for these tasks, not 23. Failed and abandoned tasks must also be considered before making a broader value claim.
 
-### 11.8 Design a useful evaluation and rollout
+### 12.8 Design a useful evaluation and rollout
 
 Define the task and costly failures. Assemble representative examples with trusted requirements and expected outcomes. Use expert checks where needed, and avoid evaluating solely against the model's own answer.
 
@@ -1179,7 +1356,7 @@ Stop or narrow the action class if evaluation shows it can hide serious defects.
 
 **Audio recap — AI product judgment:** Picture an assistant preparing a change to a checkout test. Drafting it is one decision; applying it to a shared release suite is another. Ask why the task needs an LLM, why it needs an agent, and what happens if it is wrong. Confidence and usage do not prove value. Look for useful work completed, verified actions, appropriate control, and total effort saved.
 
-## Part 12: Katalon product case mental models
+## Part 13: Katalon product case mental models
 
 **P0 — MUST KNOW**
 
@@ -1293,7 +1470,7 @@ All six scenarios are **ILLUSTRATIVE EXAMPLES**, not actual Katalon incidents or
 
 **Follow-up question:** Both options can read results, but only one supports the required safe update flow. How does that change the comparison?
 
-## Part 13: Marketplace thinking from zero
+## Part 14: Marketplace thinking from zero
 
 **P0 — MUST KNOW**
 
@@ -1303,7 +1480,7 @@ A food-delivery marketplace coordinates **buyers, merchants, and drivers**. The 
 
 The buyer wants a suitable meal at an acceptable total price and time. The merchant wants profitable demand it can fulfill. The driver wants worthwhile work with reasonable waiting and travel. The platform wants reliable completed orders and a sustainable business.
 
-### 13.1 One order connects all sides
+### 14.1 One order connects all sides
 
 A buyer opens the service, finds an available meal, evaluates price and ETA, and places an order. The merchant needs to receive and accept it, prepare the correct food, and hand it over. A driver must become available, accept the assignment, reach pickup, and deliver. The platform supports matching, information, payments, and recovery when something fails.
 
@@ -1311,7 +1488,7 @@ Some activities overlap: preparation can happen while a driver is being matched 
 
 One side's local success does not guarantee an order's success. A merchant can accept an order that no driver can collect. A driver can arrive quickly and wait at an overloaded kitchen. A buyer can place an order that later cancels.
 
-### 13.2 Buyer outcomes and metrics
+### 14.2 Buyer outcomes and metrics
 
 - **Selection:** Suitable meals available to this buyer at this time. A large catalog is less useful if nearby items are out of stock.
 - **Price:** Food cost and relevant charges after applicable discounts. Buyers experience the total amount they pay.
@@ -1324,7 +1501,7 @@ One side's local success does not guarantee an order's success. A merchant can a
 
 Example: a buyer may find a cheap meal but abandon because the delivery fee and ETA make it unsuitable for a short lunch break. Study the whole choice, not the menu price alone.
 
-### 13.3 Merchant outcomes and metrics
+### 14.3 Merchant outcomes and metrics
 
 - **Merchant availability:** Whether the restaurant is open and can offer the relevant items. Online status alone may overstate real capacity.
 - **Order acceptance:** Accepted eligible orders divided by incoming eligible orders. Separate explicit rejection from no response when useful.
@@ -1337,7 +1514,7 @@ Example: a buyer may find a cheap meal but abandon because the delivery fee and 
 
 Example: more promoted orders may increase revenue but overload preparation and displace profitable walk-in business. Ask whether orders are incremental and profitable for the merchant.
 
-### 13.4 Driver outcomes and metrics
+### 14.4 Driver outcomes and metrics
 
 - **Supply:** Drivers available for the relevant area and time, not merely registered accounts.
 - **Acceptance rate:** Accepted assignment offers divided by eligible offers. The offer-level denominator differs from buyer-order completion.
@@ -1350,7 +1527,7 @@ Example: more promoted orders may increase revenue but overload preparation and 
 
 Example: pay per order rises, but restaurant waiting doubles. A driver may earn less per online hour because fewer orders fit into the shift. Counting people without their time cycle misses effective capacity.
 
-### 13.5 Platform outcomes and metrics
+### 14.5 Platform outcomes and metrics
 
 - **Completed orders:** Orders successfully fulfilled under a stated definition.
 - **GMV, or gross merchandise value:** The value of transactions included in the chosen definition. It is not platform revenue.
@@ -1362,9 +1539,9 @@ Example: pay per order rises, but restaurant waiting doubles. A driver may earn 
 - **Retention:** Continued meaningful use by a specified buyer, merchant, or driver cohort.
 - **Marketplace balance:** Demand and usable fulfillment capacity are reasonably matched within relevant places and times.
 
-Part 16 works through the money in one order. For now, connect the measures: completed orders create transaction value; the platform receives only defined income from that activity and incurs costs to support it.
+Part 17 works through the money in one order. For now, connect the measures: completed orders create transaction value; the platform receives only defined income from that activity and incurs costs to support it.
 
-### 13.6 Liquidity is local and time-sensitive
+### 14.6 Liquidity is local and time-sensitive
 
 **Marketplace liquidity** is the ability to match demand with suitable, available supply so a transaction can be fulfilled at acceptable terms. In food delivery, that requires a meal, kitchen capacity, delivery capacity, price, and timing that work together.
 
@@ -1372,13 +1549,13 @@ Imagine many drivers online across a city but none close enough to an office dis
 
 **Check yourself:** How can merchants complain about low orders while nearby buyers complain about long ETA? Consider location, selection, driver cycles, and where demand is concentrated.
 
-## Part 14: Marketplace systems thinking
+## Part 15: Marketplace systems thinking
 
 **P0 — MUST KNOW**
 
 Every chain in this part is a **HYPOTHESIS in an ILLUSTRATIVE EXAMPLE**. It describes what might happen if the stated conditions hold. Ask for evidence at each important link. The stage labels are a thinking aid, not a claim that behavior unfolds in a fixed number of steps.
 
-### 14.1 Promotion
+### 15.1 Promotion
 
 **Action and first-order effect:** A discount lowers the effective price for eligible buyers and may increase order attempts.
 
@@ -1392,7 +1569,7 @@ Every chain in this part is a **HYPOTHESIS in an ILLUSTRATIVE EXAMPLE**. It desc
 
 **Evidence that changes the chain:** Spare kitchen and driver capacity, low redemption, or demand shifting from another time may make the overload prediction wrong. A promotion can use idle capacity productively. Establish whether the orders are new, shifted, or subsidized existing demand.
 
-### 14.2 Driver incentives
+### 15.2 Driver incentives
 
 **Action and first-order effect:** A targeted reward may attract drivers online or into a lunch zone.
 
@@ -1406,7 +1583,7 @@ Every chain in this part is a **HYPOTHESIS in an ILLUSTRATIVE EXAMPLE**. It desc
 
 **Evidence that changes the chain:** Trace where extra capacity came from and whether pickup queues were already the real constraint. Paying more drivers to wait at the same kitchens may add cost without solving throughput.
 
-### 14.3 Rain
+### 15.3 Rain
 
 **External change and first-order effect:** Rain may increase demand for delivery and reduce willingness or ability to drive. It can also slow travel. The strength of each response depends on severity and location.
 
@@ -1420,7 +1597,7 @@ Every chain in this part is a **HYPOTHESIS in an ILLUSTRATIVE EXAMPLE**. It desc
 
 **Conditional response:** More accurate promises, restricted service in unsafe areas, or appropriately scoped incentives may help different conditions. None should be selected solely because “rain means pay drivers more.”
 
-### 14.4 Merchant onboarding
+### 15.4 Merchant onboarding
 
 **Action and first-order effect:** Reducing unnecessary onboarding friction may bring more merchants onto the platform sooner.
 
@@ -1434,7 +1611,7 @@ Every chain in this part is a **HYPOTHESIS in an ILLUSTRATIVE EXAMPLE**. It desc
 
 **Evidence that changes the chain:** Determine which checks create delay and which prevent meaningful harm. Faster information collection differs from removing essential quality checks. Raw merchant registrations are not sufficient proof of supply improvement.
 
-### 14.5 Restaurant preparation delays
+### 15.5 Restaurant preparation delays
 
 **Change and first-order effect:** Overloaded kitchens or inaccurate preparation estimates delay food readiness.
 
@@ -1448,7 +1625,7 @@ Every chain in this part is a **HYPOTHESIS in an ILLUSTRATIVE EXAMPLE**. It desc
 
 **Conditional response:** Improving readiness information may better coordinate pickup if information is the issue. If the kitchen is physically overloaded, information alone cannot create capacity; adjust demand, availability, or operations. Do not mistake a scheduling problem for a staffing problem without evidence.
 
-### 14.6 Free delivery
+### 15.6 Free delivery
 
 **Action and first-order effect:** Removing the buyer's delivery fee lowers the visible total price and may improve checkout conversion.
 
@@ -1462,7 +1639,7 @@ Every chain in this part is a **HYPOTHESIS in an ILLUSTRATIVE EXAMPLE**. It desc
 
 **Evidence that changes the chain:** Identify who pays and what eligibility rules apply. “Free” to the buyer does not mean delivery has no cost. Compare benefits with the counterfactual and total system capacity.
 
-### 14.7 Geographic expansion
+### 15.7 Geographic expansion
 
 **Action and first-order effect:** Serving a new area increases potential reach and may make more meals accessible.
 
@@ -1476,7 +1653,7 @@ Every chain in this part is a **HYPOTHESIS in an ILLUSTRATIVE EXAMPLE**. It desc
 
 **Conditional response:** A limited area and time window can test whether supply and demand match. More geographic coverage is not equivalent to more useful service.
 
-### 14.8 Driver shortage
+### 15.8 Driver shortage
 
 **Change and first-order effect:** Too little available delivery capacity leaves more orders waiting for assignment or pickup.
 
@@ -1494,13 +1671,13 @@ Every chain in this part is a **HYPOTHESIS in an ILLUSTRATIVE EXAMPLE**. It desc
 
 Choose one intervention above. Explain its intended benefit, a condition needed for that benefit, one downstream risk, and the evidence that would reveal it. Avoid treating every possible risk as equally likely.
 
-## Part 15: Marketplace diagnosis
+## Part 16: Marketplace diagnosis
 
 **P0 — MUST KNOW**
 
 The interviewer says, “Orders dropped 20%.” You do not know the cause yet. Your first job is to make the number meaningful and choose a comparison that narrows the investigation.
 
-### 15.1 Verify what changed
+### 16.1 Verify what changed
 
 Clarify placed versus completed orders, the comparison period, geography, and whether the decline is relative. Check that reporting is complete and definitions did not change. Compare the event pipeline with another reliable source when available.
 
@@ -1508,7 +1685,7 @@ Your technical background can help here. An event-name change, missing DataLayer
 
 Also avoid the opposite error: assuming a real business decline is “just analytics.” If order records and payment or fulfillment evidence agree, prioritize the real mechanism.
 
-### 15.2 Locate when and where
+### 16.2 Locate when and where
 
 Ask when the decline began. Sudden changes suggest different hypotheses from gradual ones. Compare similar weekdays and time windows; consider holidays, weather, campaign timing, recent releases, and data delays.
 
@@ -1516,7 +1693,7 @@ Then locate the affected city, district, meal period, customer cohort, merchant 
 
 New users falling while existing buyers stay stable points toward acquisition or first-use issues. Existing buyers reducing frequency may point toward recurring value, price, or prior service experience. Both still need evidence.
 
-### 15.3 Decompose the outcome
+### 16.3 Decompose the outcome
 
 For consistent definitions:
 
@@ -1534,7 +1711,7 @@ For a session-based view, use eligible sessions × orders per eligible session. 
 
 One descriptive bridge is to hold the old completion rate while changing placement: 9,000 × 90% = 8,100, a loss of 900. Then change completion to 80%, a further loss of 900. The allocation depends on the bridge order; do not present it as unique causal attribution.
 
-### 15.4 Investigate each side and the shared system
+### 16.4 Investigate each side and the shared system
 
 **Buyer hypotheses:** Lower traffic, higher total price, worse selection, longer quoted ETA, payment friction, reduced frequency after poor experiences, or fewer relevant occasions.
 
@@ -1546,7 +1723,7 @@ One descriptive bridge is to hold the old completion rate while changing placeme
 
 The sides interact. A driver shortage can worsen quoted ETA before buyers order, reducing placement as well as completion. Do not assume every demand-funnel decline originates solely with buyers.
 
-### 15.5 Rank hypotheses instead of collecting everything
+### 16.5 Rank hypotheses instead of collecting everything
 
 Rank by fit with timing and segment, potential contribution to the decline, prior evidence, and the cost of checking. A sudden drop on one app version makes a release issue a useful early check. A lunch-only problem with long pickup queues makes kitchen-related capacity plausible.
 
@@ -1554,7 +1731,7 @@ Say what you expect to see. “If missing notifications explain merchant rejecti
 
 Look for evidence against your favorite explanation. If preparation time is stable and drivers are waiting for offers, kitchen overload becomes less convincing.
 
-### 15.6 Choose action and measurement
+### 16.6 Choose action and measurement
 
 Match the action to the mechanism. A verified checkout regression may need a rollback or fix. Inaccurate stock may need availability updates. Overloaded restaurants may need capacity management. Insufficient delivery capacity may call for targeted supply action or a more realistic service promise.
 
@@ -1562,7 +1739,7 @@ Define the scope and collaborating team. Use completed orders as an outcome when
 
 Ask what would change the action. If assignment improves but completion stays low because preparation worsens, reassess the constraint. Do not keep funding the first intervention just because it improved its local metric.
 
-### 15.7 Causal evaluation in a shared marketplace
+### 16.7 Causal evaluation in a shared marketplace
 
 **P1 — SHOULD KNOW**
 
@@ -1572,13 +1749,13 @@ Depending on the decision, consider geographic clusters or a **switchback**, whi
 
 **Check yourself:** Completed orders recover in the target district while nearby districts decline. What additional evidence do you need before calling the intervention successful?
 
-## Part 16: Unit economics from zero
+## Part 17: Unit economics from zero
 
 **P0 — MUST KNOW**
 
 **Unit economics** asks how much income and cost are associated with one unit of activity, such as one completed order. It helps you understand whether growth improves or weakens the business under stated assumptions.
 
-### 16.1 The important terms
+### 17.1 The important terms
 
 **GMV** is the transaction value counted under a defined rule. For this teaching example, it is food value before the platform voucher and excludes delivery fees. Real organizations may define it differently.
 
@@ -1590,7 +1767,7 @@ A **variable cost** changes with the activity under analysis. Driver compensatio
 
 **Contribution margin amount = defined revenue − included variable costs.** It describes what remains to cover excluded costs and potentially profit. It is not total company profit. Fixed costs such as office rent and some salaried functions are outside this simplified order model.
 
-### 16.2 One hypothetical order, with the money reconciled
+### 17.2 One hypothetical order, with the money reconciled
 
 **ILLUSTRATIVE EXAMPLE — All numbers below are invented for learning. They are not ShopeeFood's prices, commission, pay, costs, or accounting policy.**
 
@@ -1608,7 +1785,7 @@ Assume the driver receives **22,000 VND**, with no additional incentive in this 
 
 The equation accounts for every VND in this simplified example. The voucher has already reduced buyer cash received.
 
-### 16.3 View the same order through revenue and costs
+### 17.3 View the same order through revenue and costs
 
 Using a **gross revenue before voucher** convention for this exercise:
 
@@ -1621,7 +1798,7 @@ Using a **gross revenue before voucher** convention for this exercise:
 
 Some accounting presentations treat a promotion as a reduction in revenue. With that presentation, net revenue here would be 30,000 VND and remaining included costs 25,000 VND, still leaving 5,000 VND contribution. **Do not subtract the same voucher twice.** This example teaches reconciliation, not a company's reporting rules.
 
-### 16.4 Take rate and margin percentage
+### 17.4 Take rate and margin percentage
 
 **Take rate = defined platform revenue ÷ corresponding GMV.**
 
@@ -1631,7 +1808,7 @@ A contribution margin percentage also needs a denominator. With 5,000 contributi
 
 For an interview, start with the amount per order and ask how the company defines its reported measures. Correct definitions matter more than memorized rates.
 
-### 16.5 Why more orders can weaken economics
+### 17.5 Why more orders can weaken economics
 
 Without the 10,000 voucher, the same simplified order would contribute **15,000 VND**, assuming every other value stays unchanged.
 
@@ -1641,7 +1818,7 @@ With the promotion, suppose 140 orders occur and every order receives the vouche
 
 Orders rise **40%**, but near-term contribution falls **800,000 VND**. The arithmetic does not prove the promotion is always wrong. It shows what longer-term or other benefit would need evidence and a deliberate budget to justify the trade-off.
 
-### 16.6 Incrementality and the counterfactual
+### 17.6 Incrementality and the counterfactual
 
 An **incremental order** is one caused by the intervention beyond what would otherwise occur in the relevant scope and period. A redeemed voucher is not automatically incremental.
 
@@ -1651,7 +1828,7 @@ The key comparison is **total contribution with the intervention minus total con
 
 Longer-term retention may justify a bounded acquisition investment, but measure it over a suitable period with a credible comparison. Do not use “lifetime value will improve” as an unsupported escape from poor current economics.
 
-### 16.7 Buyer, merchant, driver and platform economics differ
+### 17.7 Buyer, merchant, driver and platform economics differ
 
 The buyer's discount may be funded by the merchant, the platform, or both. The driver may receive more per order while earning less per hour if waiting increases. The merchant may gain sales but lose contribution after food cost, discounts, and congestion. Platform contribution does not measure whether the other sides can sustain participation.
 
@@ -1661,7 +1838,7 @@ The buyer's discount may be funded by the merchant, the platform, or both. The d
 
 **Audio recap — Marketplace and economics:** A delivered meal needs a buyer, a ready kitchen, and available delivery capacity at the same time. More demand helps only if the system can serve it. The food's full value is not platform income, and platform income is not profit. In our invented order, the money must cover the merchant, driver, voucher, and other costs. Ask who pays, what remains, and whether the order would have happened anyway.
 
-## Part 17: ShopeeFood case mental models
+## Part 18: ShopeeFood case mental models
 
 **P0 — MUST KNOW**
 
@@ -1811,13 +1988,13 @@ All eight cases are **ILLUSTRATIVE EXAMPLES**. They demonstrate investigation ro
 
 **Follow-up:** More drivers join, but deliveries per online hour fall. Where should the investigation go next?
 
-## Part 18: Product communication
+## Part 19: Product communication
 
 **P0 — MUST KNOW**
 
 Speak so another person can follow the decision. Short sentences with clear relationships are more useful than advanced vocabulary. Explain what you know, what you think may be happening, and what evidence would change the action.
 
-### 18.1 Clarify the ambiguity that matters
+### 19.1 Clarify the ambiguity that matters
 
 Use **“I'd first clarify…”** when a definition changes the investigation.
 
@@ -1825,7 +2002,7 @@ Use **“I'd first clarify…”** when a definition changes the investigation.
 
 Avoid asking several unrelated questions without explaining why. Follow the first answer and choose the next useful question.
 
-### 18.2 Give a small structure
+### 19.2 Give a small structure
 
 Use **“I'd break this into…”** when the situation needs manageable branches.
 
@@ -1833,7 +2010,7 @@ Use **“I'd break this into…”** when the situation needs manageable branche
 
 For AI: “I'd separate output quality, review effort, and whether users have another relevant task.” These branches guide evidence collection; do not defend them if the evidence suggests a better breakdown.
 
-### 18.3 Name a hypothesis and its test
+### 19.3 Name a hypothesis and its test
 
 Use **“My initial hypothesis would be…”** for a possible explanation, not an established fact.
 
@@ -1843,7 +2020,7 @@ Use **“The evidence I'd want to see is…”** to explain the comparison.
 
 “The evidence I'd want to see is the type of edits users make. Convention changes would suggest a different response from incorrect assertions.”
 
-### 18.4 Challenge an assumption respectfully
+### 19.4 Challenge an assumption respectfully
 
 Use **“I wouldn't conclude that yet because…”** when the proposed conclusion exceeds the evidence.
 
@@ -1851,7 +2028,7 @@ Use **“I wouldn't conclude that yet because…”** when the proposed conclusi
 
 Accept the useful part of the other person's point. “The delay is worth investigating. I'd first separate waiting for review from the time spent checking.” This keeps the discussion about the problem.
 
-### 18.5 Make the trade-off and recommendation explicit
+### 19.5 Make the trade-off and recommendation explicit
 
 Use **“The main trade-off is…”** to identify the important cost.
 
@@ -1863,7 +2040,7 @@ Use **“Given the information we have…”** to make a decision under uncertai
 
 Then name a change criterion: “I'd reconsider if correctness errors remain the main cause of review effort.” Finish after the recommendation, main reason, and material risk. Expand if asked.
 
-### 18.6 Handle uncertainty and pressure
+### 19.6 Handle uncertainty and pressure
 
 Use **“I don't know enough to conclude that confidently, but here's how I'd investigate it.”** Then give one useful next comparison.
 
@@ -1871,7 +2048,7 @@ If asked to decide anyway: “Assuming assignment capacity is the constraint, I'
 
 If new evidence contradicts you: “That changes my view. Stable assignment time makes driver availability less likely, so I'd focus on preparation.” Changing your mind with evidence is a strength of the reasoning.
 
-### 18.7 Translate technical detail into user impact
+### 19.7 Translate technical detail into user impact
 
 **P1 — SHOULD KNOW**
 
@@ -1881,13 +2058,13 @@ Instead of “the model needs retrieval,” explain: “It needs the current req
 
 **Audio recap — Communication:** Help the listener follow one decision. Clarify the important ambiguity, give a small structure, request evidence with a purpose, and make a conditional recommendation. The common mistake is speaking for a long time without choosing anything. Ask yourself: could the interviewer repeat my recommendation and the evidence behind it?
 
-## Part 19: Behavioral interview thinking
+## Part 20: Behavioral interview thinking
 
 **P0 — MUST KNOW**
 
 A behavioral answer explains something you actually did. Hypothetical case reasoning and polished teaching examples must not become employment or project history.
 
-### 19.1 What the repository currently supports
+### 20.1 What the repository currently supports
 
 The primary candidate source is the [evidence ledger](pm-interview-bootcamp/stories/evidence-ledger.md), supported by its preserved raw sources. Its evidence levels matter:
 
@@ -1899,7 +2076,7 @@ The primary candidate source is the [evidence ledger](pm-interview-bootcamp/stor
 
 “Self-report” means the candidate stated it. It is not independent verification. The repository has no complete interview-ready, verified behavioral story. Detailed TDCX/FPT incidents and PRJ226 capabilities remain **PERSONAL EVIDENCE REQUIRED**.
 
-### 19.2 Shape a true event
+### 20.2 Shape a true event
 
 Use **Context → Problem → My responsibility → Action → Why I chose it → Result → Learning**.
 
@@ -1915,7 +2092,7 @@ Each step answers a different question:
 
 This is a structure for extracting facts, not a license to fill empty sections with plausible content.
 
-### 19.3 Story areas that still need personal evidence
+### 20.3 Story areas that still need personal evidence
 
 **Integration diagnosis — PERSONAL EVIDENCE REQUIRED.** The broad background suggests a relevant area to explore. Supply one actual customer request, what you observed, your personal investigation, the change made, and the verified outcome. Do not claim a conversion lift because tracking was repaired unless business conversion was separately measured.
 
@@ -1923,7 +2100,7 @@ This is a structure for extracting facts, not a license to fill empty sections w
 
 **Disagreement or failure — PERSONAL EVIDENCE REQUIRED.** Identify a real initial belief, contrary evidence, your response, and its result. Do not create a dramatic conflict to demonstrate leadership.
 
-### 19.4 Product signals must come from the event
+### 20.4 Product signals must come from the event
 
 An actual story may demonstrate challenging an assumption, diagnosing a cause, using evidence, handling disagreement, making a trade-off, learning from failure, explaining technical detail, or using AI thoughtfully.
 
@@ -1931,89 +2108,89 @@ Choose the strongest supported signal. Ordinary troubleshooting can show discipl
 
 Useful honest language includes: “My part was…”, “I checked this by…”, “The result I observed was…”, and “I did not measure the wider business impact.” A modest precise result is more defensible than an invented metric.
 
-### 19.5 A safe preparation exercise
+### 20.5 A safe preparation exercise
 
 Recall one real event. Ask only the first question now: **What happened, and what were you personally responsible for?** After answering, identify what evidence is available and what remains unknown. Build the story from those facts at your pace; no mandatory log or state update is needed.
 
 No polished personal story is supplied here because the missing incident details cannot be filled confidently.
 
-## Part 20: Common beginner failure modes
+## Part 21: Common beginner failure modes
 
 **P0 — MUST KNOW**
 
 Use each pattern as **weak behavior → why it is weak → better reflex**.
 
-### 20.1 Jumping directly to solutions
+### 21.1 Jumping directly to solutions
 
 “Orders fell, so launch discounts.” This assumes demand is the problem and ignores fulfillment. First define the order measure and locate the changed stage.
 
-### 20.2 Treating a feature request as the problem
+### 21.2 Treating a feature request as the problem
 
 “Users need automatic repair.” This embeds one answer before explaining the job. Ask what happened in the last failed-test investigation and what outcome was difficult.
 
-### 20.3 Believing the first hypothesis
+### 21.3 Believing the first hypothesis
 
 “Rain caused everything.” Several mechanisms can coexist, and timing alone does not prove cause. Name a competing explanation and the observation that separates them.
 
-### 20.4 Listing metrics without causal reasoning
+### 21.4 Listing metrics without causal reasoning
 
 “I'll track retention, revenue, conversion, and engagement.” The list does not explain the decision. Pick the outcome, the mechanism you need to diagnose, and the harm you need to detect.
 
-### 20.5 Forgetting segmentation
+### 21.5 Forgetting segmentation
 
 “The citywide driver count is stable, so supply is fine.” This hides local availability and time cycles. Compare the affected zone and meal period, then inspect how drivers spend their time.
 
-### 20.6 Optimizing one marketplace side
+### 21.6 Optimizing one marketplace side
 
 “Give buyers the lowest fee.” Drivers still need compensation and merchants still need workable operations. Follow the effect through all sides and identify the payer and capacity constraints.
 
-### 20.7 Ignoring economics
+### 21.7 Ignoring economics
 
 “Orders rose, so the campaign worked.” Orders may be expensive or non-incremental. Reconcile revenue and included costs, then compare total contribution with the counterfactual.
 
-### 20.8 Assuming AI is always appropriate
+### 21.8 Assuming AI is always appropriate
 
 “Let's add an agent.” Flexible action can introduce unnecessary failure points. Ask which part requires language interpretation or adaptive next steps, and compare a simpler baseline.
 
-### 20.9 Treating confidence as certainty
+### 21.9 Treating confidence as certainty
 
 “It is 99% confident, so it can execute.” The score may be uncalibrated and the error cost may be high. Verify relevant behavior and choose permissions from evidence and risk.
 
-### 20.10 Ignoring meaningful human control
+### 21.10 Ignoring meaningful human control
 
 “Humans can approve everything.” Review can become confusing or automatic rubber-stamping. Put understandable approval at the decisions where it protects value, and enforce boundaries outside the prompt.
 
-### 20.11 Ignoring second-order effects
+### 21.11 Ignoring second-order effects
 
 “More incentives will solve the district shortage.” Drivers may leave neighboring areas. Ask where the added capacity comes from and measure the wider effect.
 
-### 20.12 Overusing frameworks
+### 21.12 Overusing frameworks
 
 Reciting nine labels can hide a weak next question. Use the underlying logic to explain one useful breakdown and the evidence it requires. The framework serves the problem.
 
-### 20.13 Speaking at length without a recommendation
+### 21.13 Speaking at length without a recommendation
 
 A long list of possibilities leaves the decision unresolved. Rank the explanations, choose a limited next step, name the main risk, and stop.
 
-### 20.14 Pretending to know
+### 21.14 Pretending to know
 
 Invented company policies, costs, or project achievements cannot survive follow-up. State what is known, what is assumed, and what evidence you would seek. Use hypothetical numbers only when clearly labeled.
 
-### 20.15 Confusing a green test with a useful test
+### 21.15 Confusing a green test with a useful test
 
 A weak assertion can pass while the application is wrong. Check what behavior the test protects and whether the generated or repaired test preserves that meaning.
 
-### 20.16 Claiming causality from before and after
+### 21.16 Claiming causality from before and after
 
 “Retention rose after launch, so the feature caused it.” Seasonality, different users, or other releases may explain the movement. Seek a credible comparison and state remaining uncertainty.
 
-### 20.17 Hiding the denominator
+### 21.17 Hiding the denominator
 
 “Cancellation improved by 5%.” The population, relative change, and status definition are unclear. State the numerator, denominator, period, and whether the change is percent or percentage points.
 
 **Check yourself:** Which weak reflex appears in your own case attempts? Choose one and replace it with a concrete question in the next case.
 
-## Part 21: Mini case walkthroughs
+## Part 22: Mini case walkthroughs
 
 **P0 — MUST KNOW**
 
@@ -2177,7 +2354,7 @@ Track cycle components, completed orders, severe waits, driver earnings per onli
 
 **Transfer question:** Why might maximizing driver utilization make the lunch service fragile even when average earnings look good?
 
-## Part 22: Concept comparisons
+## Part 23: Concept comparisons
 
 **P0 — MUST KNOW**, except the fine-tuning comparison marked P2. Use these distinctions to explain a decision, not just recite definitions.
 
@@ -2265,11 +2442,35 @@ Revenue is income before the included variable costs are deducted. Contribution 
 
 A first-order effect is close to the intervention. A second-order effect follows through another behavior or constraint. An incentive may attract drivers to a zone; their departure from neighboring zones may reduce service there.
 
+### Agile versus Scrum versus Kanban
+
+Agile is a philosophy of value, feedback, collaboration, and adaptation. Scrum is a lightweight framework using accountabilities, goals, Sprints, events, and artifacts. Kanban is a strategy for optimizing value flow through visible workflow and WIP control. They are not synonyms.
+
+### Product Backlog versus Sprint Backlog
+
+The Product Backlog is the emergent ordered source of product work. The Sprint Backlog is the Developers' current plan: Sprint Goal, selected Product Backlog items, and plan for delivering the Increment.
+
+### Product Goal versus Sprint Goal
+
+The Product Goal is the longer-term target for the Scrum Team. The Sprint Goal is the single objective for one Sprint and provides flexibility in the exact work used to achieve it.
+
+### Acceptance criteria versus Definition of Done
+
+Acceptance criteria describe item-specific expected behavior. The Definition of Done describes the shared quality state required for work to be part of the Increment. Acceptance criteria are common practice; DoD is an official Scrum commitment.
+
+### Sprint Review versus Sprint Retrospective
+
+Review inspects the product outcome and changed environment with stakeholders and adapts what to do next. Retrospective is for the Scrum Team to improve quality and effectiveness in how it works.
+
+### Delivery metric versus product outcome
+
+A delivery metric describes how work moves or completes. A product outcome describes changed customer or business value. Higher velocity can coexist with an unused or harmful feature.
+
 ### Extra useful distinctions
 
 **Acceptance versus correctness:** People can accept wrong AI suggestions. **Pass rate versus defect detection:** Tests can pass because checks are weak. **Quoted ETA versus actual duration:** A better estimate can rise without deliveries getting slower. **Driver assignment cancellation versus order cancellation:** Reassignment may preserve the buyer's order. Each distinction changes the measurement and decision.
 
-## Part 23: Glossary
+## Part 24: Glossary
 
 Each entry has a priority, plain-English definition, and short **illustrative example**. These are concise recall cues; the earlier parts teach how the ideas work together.
 
@@ -2297,6 +2498,41 @@ Each entry has a priority, plain-English definition, and short **illustrative ex
 - **Acceptance criterion — P0:** An observable condition for meeting a requirement. **Example:** Rejecting a suggestion leaves the file unchanged.
 - **Product spec — P1:** A shared description of problem, behavior, boundaries, and measures. **Example:** A single-test review feature specification.
 - **Opportunity cost — P1:** The alternative value forgone by a choice. **Example:** Agent work delays a setup fix.
+
+### Agile and product-delivery terms
+
+- **Agile — P0:** Values and principles for delivering value, collaborating, learning, and adapting under uncertainty. **Example:** Test a narrow review flow before scaling autonomy.
+- **Scrum — P0:** A lightweight framework for adaptive solutions to complex problems. **Example:** A Scrum Team creates a Done Increment toward one Sprint Goal.
+- **Kanban — P0:** A strategy for optimizing the flow of value through a defined and visualized workflow. **Example:** Limit support work in progress and unblock aging items.
+- **Empiricism — P0:** Making decisions from experience and observed evidence. **Example:** Adapt the backlog after users inspect an Increment.
+- **Transparency — P0:** Making important work, goals, quality, and results visible enough for sound decisions. **Example:** Show unfinished work as unfinished.
+- **Inspection — P0:** Examining product, progress, or process evidence. **Example:** Review the Increment with stakeholders.
+- **Adaptation — P0:** Changing a plan or working approach when inspection reveals a meaningful gap. **Example:** Reorder provenance above automation.
+- **Scrum Team — P0:** Product Owner, Scrum Master, and Developers working as one small, self-managing, cross-functional unit. **Example:** Collaborate toward one Product Goal.
+- **Product Owner — P0:** Person accountable for maximizing product value and effective Product Backlog management. **Example:** Order evidence visibility above a broad AI feature.
+- **Developers — P0:** Scrum Team members accountable for creating the usable Increment and managing the Sprint plan and quality. **Example:** Select work and update the plan toward the Sprint Goal.
+- **Scrum Master — P0:** Person accountable for establishing Scrum and enabling team effectiveness. **Example:** Help remove a repeated coordination impediment.
+- **Product Backlog — P0:** Emergent, ordered list of what is needed to improve the product. **Example:** Evidence view, permissions, failure grouping, and reliability work.
+- **Product Goal — P0:** Longer-term target for the Scrum Team, associated with the Product Backlog. **Example:** Trustworthy failure diagnosis before release.
+- **Sprint — P0:** Fixed-length Scrum event of one month or less containing all other events and product work. **Example:** A bounded learning cycle for an evidence view.
+- **Sprint Goal — P0:** Single objective for the Sprint, associated with the Sprint Backlog. **Example:** Connect one failed test to relevant logs.
+- **Sprint Backlog — P0:** Sprint Goal, selected Product Backlog items, and Developers' actionable delivery plan. **Example:** Goal, evidence-panel items, and technical tasks.
+- **Increment — P0:** Usable, integrated, verified step toward the Product Goal. **Example:** An authorized linked-log view meeting DoD.
+- **Definition of Done — P0:** Formal shared description of the Increment's required quality state. **Example:** Review, tests, integration, permission checks, and required documentation complete.
+- **Sprint Planning — P0:** Scrum Team event deciding why the Sprint is valuable, what can be Done, and how. **Example:** Create one goal and realistic plan.
+- **Daily Scrum — P0:** Fifteen-minute Developers' event to inspect goal progress and adapt the plan. **Example:** Replan around a blocking integration dependency.
+- **Sprint Review — P0:** Working session to inspect Sprint outcome and determine future product adaptations with stakeholders. **Example:** Reorder the backlog from user feedback.
+- **Sprint Retrospective — P0:** Scrum Team event to plan improvements to quality and effectiveness. **Example:** add earlier access-risk discussion.
+- **Backlog refinement — P1:** Ongoing breakdown and clarification of Product Backlog items; not a formal Scrum event. **Example:** clarify dependency and acceptance behavior.
+- **User story — P1:** Common user-centered description of a possible capability; not required by Scrum. **Example:** “As a QA engineer, I want to inspect a proposed change…”
+- **Story point — P1:** Common team-relative sizing unit, not time and not required by Scrum. **Example:** Five points do not equal five days.
+- **Velocity — P1:** Common measure of locally estimated work completed per interval; useful cautiously for same-team forecasts, not customer value. **Example:** More points do not prove better outcomes.
+- **Cycle time — P1:** Elapsed time from work started to finished under a stated definition. **Example:** Four days from development start to Done.
+- **Throughput — P1:** Number of finished work items per unit of time. **Example:** Eight comparable items completed in a month.
+- **Work in progress (WIP) — P1:** Work started but not finished. **Example:** Too many concurrent items create queues.
+- **Technical debt — P0:** Internal technical deficiency that adds future change effort or risk. **Example:** A brittle adapter slows every new integration.
+- **Product discovery — P0:** Work to decide what is worth building. **Example:** Observe why users reject AI changes.
+- **Product delivery — P0:** Work to build, verify, ship, operate, and improve a product. **Example:** Deliver a permission-safe review Increment.
 
 ### Evidence and metric terms
 
@@ -2390,15 +2626,15 @@ Each entry has a priority, plain-English definition, and short **illustrative ex
 - **Pickup wait — P0:** Time at the merchant before collecting food. **Example:** Driver waits for cooking to finish.
 - **ETA — P0:** Estimated time of arrival. **Example:** A promised delivery window.
 - **Cancellation — P0:** Termination of a defined order or assignment. **Example:** An unfulfilled buyer order ends.
-- **GMV — P0:** Transaction value under a stated definition. **Example:** 100,000 VND food value in Part 16.
+- **GMV — P0:** Transaction value under a stated definition. **Example:** 100,000 VND food value in Part 17.
 - **Revenue — P0:** Defined income to the business. **Example:** Commission and included fees.
 - **Take rate — P0:** Defined revenue divided by corresponding GMV. **Example:** Specify gross or net revenue first.
-- **Merchant commission — P0:** A platform charge to the merchant. **Example:** The invented 20,000 VND charge in Part 16.
+- **Merchant commission — P0:** A platform charge to the merchant. **Example:** The invented 20,000 VND charge in Part 17.
 - **Delivery fee — P0:** The buyer's delivery charge. **Example:** It can differ from driver compensation.
 - **Subsidy — P0:** Funding for a participation or price benefit. **Example:** A platform-funded voucher.
 - **Incentive — P0:** A reward intended to change behavior. **Example:** A lunch availability bonus.
 - **Variable cost — P0:** A cost changing with the modeled activity. **Example:** Driver compensation per fulfilled order.
-- **Contribution margin — P0:** Revenue minus included variable costs. **Example:** 5,000 VND remains in Part 16.
+- **Contribution margin — P0:** Revenue minus included variable costs. **Example:** 5,000 VND remains in Part 17.
 - **Unit economics — P0:** Income and cost for one defined unit. **Example:** Economics of a completed order.
 - **Incrementality — P0:** Change beyond what would otherwise happen. **Example:** Extra orders caused by a voucher.
 - **Trade-off — P0:** A benefit requiring a cost or risk elsewhere. **Example:** Faster approval versus less review.
@@ -2406,7 +2642,7 @@ Each entry has a priority, plain-English definition, and short **illustrative ex
 - **Second-order effect — P0:** A downstream response through the system. **Example:** Extra demand creates pickup queues.
 - **Feedback loop — P1:** A chain returning to influence its starting condition. **Example:** Reliability encourages demand that changes capacity.
 
-## Part 24: Active recall question bank
+## Part 25: Active recall question bank
 
 **P0 — MUST KNOW**, with selected P1 extensions. These questions test understanding. For a practice session, use one at a time, attempt an answer, then request feedback. The brief answer cues after the bank are for checking, not memorizing. More than one defensible action may exist if the reasoning and conditions are clear.
 
@@ -2418,6 +2654,19 @@ Each entry has a priority, plain-English definition, and short **illustrative ex
 4. **F4:** How is a testable hypothesis different from an assumption?
 5. **F5:** Why might observing the last real task be more useful than asking whether someone likes a feature?
 6. **F6:** A proposed solution is technically impressive but saves time in a minor workflow stage. What would you investigate before prioritizing it?
+
+### Agile product delivery
+
+1. **AG1:** Why is Agile not the same as using two-week Sprints and Daily Scrums?
+2. **AG2:** Distinguish Agile, Scrum, and Kanban in one sentence each.
+3. **AG3:** Which Scrum elements are official, and why are story points and velocity different?
+4. **AG4:** How do Product Goal, Product Backlog, Sprint Goal, Sprint Backlog, Increment, and DoD connect?
+5. **AG5:** Why is Daily Scrum not a manager status meeting?
+6. **AG6:** A stakeholder requests urgent work mid-Sprint. What evidence and trade-offs determine the response?
+7. **AG7:** Explain Sprint Review versus Sprint Retrospective using a missed Sprint Goal.
+8. **AG8:** Why can a technically invisible debt item outrank a customer-requested feature?
+9. **AG9:** Velocity falls 30%. What must you investigate before judging performance?
+10. **AG10:** How should the candidate answer a request for a PRJ226 Sprint story?
 
 ### Katalon
 
@@ -2476,7 +2725,7 @@ Each entry has a priority, plain-English definition, and short **illustrative ex
 ### Unit economics
 
 1. **U1:** Why is food GMV different from the platform's revenue?
-2. **U2:** In Part 16, reconcile the buyer's 110,000 VND payment across merchant, driver, other costs, and platform contribution.
+2. **U2:** In Part 17, reconcile the buyer's 110,000 VND payment across merchant, driver, other costs, and platform contribution.
 3. **U3:** Why should a voucher recorded as reduced revenue not also be deducted again as a cost?
 4. **U4:** How can order volume rise 40% while total contribution falls in the hypothetical promotion example?
 5. **U5:** Why is a redeemed promoted order not automatically incremental?
@@ -2497,6 +2746,8 @@ These cues identify essential reasoning. They are not full case answers.
 
 **Foundation:** F1 needs definition, affected user, impact, and mechanism. F2 asks about a recent failure, actions, and consequences. F3 targets useful effort or speed with reliability/control constraints. F4 needs predicted observable evidence. F5 reveals actual behavior and trade-offs, with memory limits. F6 checks the end-to-end bottleneck and opportunity cost.
 
+**Agile:** AG1 needs value, small increments, feedback, and adaptation—not rituals. AG2 is philosophy, Sprint framework, and flow strategy. AG3 separates Guide-defined accountabilities/events/artifacts/commitments from optional techniques. AG4 connects long-term target, ordered work, current goal/plan, and usable quality. AG5 focuses Developers on inspecting goal progress and adapting their plan. AG6 checks harm, urgency, goal, risk, effort, and displaced work. AG7 inspects product/direction versus working system. AG8 links debt to risk, incidents, dependency, and future response. AG9 checks comparability, capacity, work mix, DoD, quality, goal, and outcome. AG10 states that PRJ226 did not use formal Sprints, does not invent one, and keeps team application hypothetical.
+
 **Katalon:** K1 classifies edits against requirements and conventions. K2 needs meaningful defect detection, not execution alone. K3 clarifies job, scope, actors, authorization, and error costs. K4 considers inspectable evidence, predictable actions, and policy obligations. K5 can use unchanged files on rejection, exact-change acceptance, and visible conflict handling. K6 distinguishes lack of opportunity from lack of value.
 
 **AI:** A1 distinguishes structured prediction from language interpretation. A2 supplies relevant facts but still needs source and answer verification. A3 requires validation, permission, execution, result observation, and recovery. A4 needs variable next steps that create user value. A5 weighs reuse against narrow control and maintenance. A6 requires calibrated evidence, verification, and consequence-aware boundaries.
@@ -2513,11 +2764,59 @@ These cues identify essential reasoning. They are not full case answers.
 
 **Judgment:** J1 stable explicit rules may be adequate and easier to verify. J2 an edit can affect releases or expose data before undo. J3 consider queue ownership, notifications, clear reviews, and action classes. J4 compare useful completion and total effort, latency, and cost by task. J5 update openly and seek the new decisive comparison. J6 specifies scope, action, rationale, owner, evaluation, risk, and change condition.
 
-## Part 25: Flashcard-ready facts
+## Part 26: Flashcard-ready facts
 
 **P0 — MUST KNOW**
 
 These cards focus on reasoning moves. The glossary provides terminology, so these do not repeat every definition.
+
+### What is Agile's central product loop?
+
+**Answer:** Valuable problem or hypothesis → small Increment → inspect → learn → adapt.
+
+**Example:** Observe review difficulty, build a narrow evidence view, and reorder work from feedback.
+
+### Which popular practices are not required by Scrum?
+
+**Answer:** User stories, acceptance criteria, story points, planning poker, velocity, Definition of Ready, burndowns, and two-week Sprint length are common or optional rather than required elements.
+
+**Example:** A team may size work without points and still use Scrum.
+
+### How do Scrum's artifacts and commitments pair?
+
+**Answer:** Product Backlog–Product Goal; Sprint Backlog–Sprint Goal; Increment–Definition of Done.
+
+**Example:** The current Sprint plan advances one objective and produces a usable quality-assured step.
+
+### What separates Sprint Review from Retrospective?
+
+**Answer:** Review inspects product outcome and next direction with stakeholders; Retrospective improves the Scrum Team's quality and effectiveness.
+
+**Example:** Reorder a feature at Review; improve dependency checks at Retro.
+
+### What should happen to an urgent mid-Sprint request?
+
+**Answer:** Clarify harm and evidence, check the Sprint Goal, involve Developers, expose opportunity cost, and choose wait, scope change, mitigation, or exceptional replanning.
+
+**Example:** Interrupt for severe production harm, not merely a louder preference.
+
+### Why is velocity not a product outcome?
+
+**Answer:** It measures locally estimated completed work, not whether customers received value.
+
+**Example:** Point totals can rise while an unused feature ships.
+
+### How should technical debt enter a product decision?
+
+**Answer:** Through its observable effect on risk, incidents, change effort, dependencies, and future customer response.
+
+**Example:** Fix a brittle adapter that repeatedly breaks requested integrations.
+
+### What is the honest PRJ226 Agile answer?
+
+**Answer:** It was self-reported as primarily solo and did not formally use Agile or Scrum; do not invent Sprints, roles, events, or practices.
+
+**Example:** Explain professional Scrum understanding separately from a hypothetical team exercise.
 
 ### What should come before proposing a feature?
 
@@ -2639,7 +2938,7 @@ These cards focus on reasoning moves. The glossary provides terminology, so thes
 
 **Example:** Mark an unverified PRJ226 achievement as PERSONAL EVIDENCE REQUIRED.
 
-## Part 26: Audio-ready recaps
+## Part 27: Audio-ready recaps
 
 **P0 — MUST KNOW**
 
@@ -2648,6 +2947,10 @@ These standalone recaps repeat the central mental models in conversational form.
 ### PM Thinking Recap
 
 A PM helps the team decide which problem deserves attention. Imagine a customer asking for a button to fix every failed test. The button is a proposed answer. The real need might be understanding failures before a release. Start with the job, obstacle, and consequence, then ask what evidence supports them. The common mistake is jumping from a request to a feature. Ask yourself: what outcome is difficult today, and could several solutions address it?
+
+### Agile Product Delivery Recap
+
+Imagine a testing team asked to generate tests faster. Observation shows generation is not the main delay; reviewers cannot judge uncertain changes. The Product Owner orders a trustworthy review flow above broad automation. The Scrum Team chooses a Sprint Goal, and Developers build one usable Increment with diff, provenance, rejection, permission checks, and the product's quality requirements. At Review, stakeholders find that conflicting sources remain confusing, so the Product Backlog adapts. At Retrospective, the team improves how it finds permission risks early. The common mistake is calling meetings Agile while evidence never changes a decision. Ask yourself: what small Done Increment would create the next useful learning?
 
 ### AI Product Judgment Recap
 
@@ -2682,6 +2985,7 @@ This source synthesizes the existing learner-facing notes and adds clearly label
 - [README](README.md) and [roadmap](pm-interview-bootcamp/ROADMAP.md): learning scope and learner-controlled pace.
 - [Product thinking](pm-interview-bootcamp/study/PRODUCT_THINKING.md), [customer discovery](pm-interview-bootcamp/study/CUSTOMER_DISCOVERY.md), and [testing](pm-interview-bootcamp/study/TESTING_FOR_PM.md): foundational explanations and workflow distinctions.
 - [AI, agents and MCP](pm-interview-bootcamp/study/AI_AGENTS_MCP.md) and [marketplace thinking](pm-interview-bootcamp/study/MARKETPLACE_FOR_PM.md): technical and marketplace mental models.
+- [Agile for Product Managers](pm-interview-bootcamp/study/AGILE_FOR_PM.md): detailed Agile/Scrum/Kanban teaching, execution cases, interview bank, and strict PRJ226 boundary.
 - [Katalon cases](pm-interview-bootcamp/katalon/CASES.md) and [ShopeeFood cases](pm-interview-bootcamp/shopeefood/CASES.md): hypothetical practice themes. Some numerical teaching observations are adapted from existing synthetic follow-ups.
 - [English phrase bank](pm-interview-bootcamp/english/phrase-bank.md) and [quick review](pm-interview-bootcamp/QUICK_REVIEW.md): concise communication and recall patterns.
 - [Evidence ledger](pm-interview-bootcamp/stories/evidence-ledger.md) and [story bank](pm-interview-bootcamp/stories/story-bank.md): candidate claim boundaries. Broad self-report is kept distinct from independently verified experience.
@@ -2695,6 +2999,14 @@ The narrow AI architecture checks for this synthesis were made on September 12, 
 - [Anthropic: Building effective agents](https://www.anthropic.com/engineering/building-effective-agents): distinction between predefined workflows and adaptive agents.
 - [Google Cloud: RAG overview](https://cloud.google.com/vertex-ai/generative-ai/docs/rag-engine/rag-overview): retrieval and supplied context in generation.
 
+The Agile and Scrum source check was made on September 14, 2026:
+
+- [Agile Manifesto](https://agilemanifesto.org/) and [principles](https://agilemanifesto.org/principles): official values and principles.
+- [Official Scrum Guide](https://scrumguides.org/scrum-guide.html) and [download page](https://scrumguides.org/download): the November 2020 guide remains identified as the official current version; source for Scrum theory, values, accountabilities, events, artifacts, commitments, and rules.
+- [Kanban Guide, May 2025](https://kanbanguides.org/the-kanban-guide/2025.5/pdf/kanban-guide.v2025.5.en.pdf): Kanban definition, WIP control, and flow metrics.
+- [Scrum.org refinement resource](https://www.scrum.org/resources/product-backlog-refinement), [Atlassian user stories](https://www.atlassian.com/agile/project-management/user-stories), [Product Talk on discovery and delivery](https://www.producttalk.org/adopting-continuous-product-discovery/), and [Martin Fowler on technical debt](https://martinfowler.com/bliki/TechnicalDebt.html): complementary practices and PM interpretation. They do not override the Scrum Guide.
+- [Scrum.org Product Owner interview questions for 2026](https://www.scrum.org/resources/blog/product-owner-interview-questions-2026) and [Product and Value interview questions](https://www.scrum.org/resources/interview-questions-about-product-and-value): cross-check of question themes around value, evidence, goals, backlog decisions, stakeholders, and cross-functional work.
+
 The product recommendations and causal examples in this source are educational applications, not findings from those sources. No hands-on product benchmark or new customer research was performed.
 
 ### Material gaps kept explicit
@@ -2703,7 +3015,7 @@ The repository does not establish complete candidate incidents, quantified impac
 
 Actual company financial rates, internal metrics, matching rules, detailed permission defaults, and exact interview assessment mechanics are not assumed. Product capabilities and recruitment details can change; use the preserved research's cited originals if a specific current claim becomes necessary. This source teaches decisions without requiring those unknown facts.
 
-## Part 27: Final 15-minute review
+## Part 28: Final 15-minute review
 
 **P0 — MUST KNOW**
 
@@ -2724,6 +3036,16 @@ Choose the smallest useful next step that resolves an important uncertainty. A c
 Define the symptom and comparison. Break the outcome into a few useful branches. Compare meaningful segments. Rank explanations and request evidence with a purpose. Make a conditional recommendation rather than waiting for perfect information.
 
 Say what would change your mind. If evidence contradicts you, update the action.
+
+### Agile Delivery Reflex
+
+**PROBLEM → PRIORITY → SMALL INCREMENT → BUILD → INSPECT → LEARN → ADAPT.**
+
+Agile is the philosophy; Scrum is one framework; Kanban optimizes flow. In Scrum, connect Product Goal and Product Backlog to Sprint Goal and Sprint Backlog, then create an Increment meeting DoD. Review inspects the product and future direction; Retrospective improves how the team works.
+
+For new work mid-Sprint, clarify harm and urgency, protect the Sprint Goal, involve Developers, and expose opportunity cost. Treat velocity as a local forecasting practice, not customer value. Translate technical debt into delivery risk, incidents, effort, and user consequences.
+
+PRJ226 did not formally use Scrum. Do not invent roles, Sprints, events, points, or outcomes. Keep any Scrum application explicitly hypothetical.
 
 ### AI Reflex
 
@@ -2779,3 +3101,4 @@ Without reading an answer, explain one at a time:
 1. Why could an AI testing feature work technically but fail to create value?
 2. Why could more food orders make the marketplace less healthy?
 3. What evidence would make you change your first recommendation?
+4. An urgent request arrives mid-Sprint. How would you protect value without treating the plan as fixed?
